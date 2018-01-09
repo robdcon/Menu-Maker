@@ -25,9 +25,9 @@ $regStmnt->bindValue('username', $usr);
 
 $regStmnt->execute();
 
-$count = $regStmnt->rowCount();
+//$regStmnt->fetch();
 
-$_SESSION['test_msg'] = "Count = ".$count;
+$count = $regStmnt->rowCount();
 
 //$checkresult = $conn->query($sqlcheck); // Store the result of the query
 
@@ -50,8 +50,6 @@ else // Otherwise, continue to upload the details...
 	$query->execute(['username'=>$usr, 'fname'=>$first, 'lname'=>$last, 'email'=>$email, 'password'=>$psw]);
 
 	$result=$query->fetch();
-
-	$_SESSION['sqlcheck'] = $result;
 
 	if($query->execute() /*$result = $conn->query($sql)*/) // If the query attemp returns true, direct to login screen to login
 	{

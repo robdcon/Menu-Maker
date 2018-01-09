@@ -3,6 +3,9 @@
 //Start session
 session_start();
 
+ini_set('display_errors',true);
+error_reporting(E_ALL);
+
 // Database creation details are in query folder
 
 // Include test connection function
@@ -17,21 +20,19 @@ $uid = stripslashes($uid);
 $psw = stripslashes($psw);
 
 //Create query to check details against database
-$sql = "SELECT * FROM users WHERE user_username = ':username' AND user_password = ':password' ";
-
 
 //Prepare statement using pdo object methods
-$stmnt = $pdo->prepare($sql);
+$stmnt = $pdo->prepare("SELECT * FROM users WHERE user_username = :username AND user_password = :password");
 
 
 //Bind username & password values to their respective identifiers
-$stmnt->bindValue(':username', '$uid');
-$stmnt->bindValue(':password', '$psw');
+$stmnt->bindValue('username', $uid);
+$stmnt->bindValue('password', $psw);
 
 //Execute statement with given variables
 $stmnt->execute();
 
-$row = $stmnt->fetch(PDO::FETCH_ASSOC);
+$row = $stmnt->fetch();
 
 
 //Create variable to store result of query
@@ -41,7 +42,7 @@ $row = $stmnt->fetch(PDO::FETCH_ASSOC);
 //$count = mysqli_num_rows($result);
 
 
-if(!$row = $stmnt->fetch(PDO::FETCH_ASSOC)/*$row=mysqli_fetch_assoc($result)*/) // If no rows are found that match the criteria, set the appropriate error msg
+if(!$row/*$row=mysqli_fetch_assoc($result)*/) // If no rows are found that match the criteria, set the appropriate error msg
 {
 	$_SESSION['message'] = "Your username or password is incorrect";
 	
