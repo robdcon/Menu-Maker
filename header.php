@@ -32,6 +32,7 @@
 	<script src="js/resultslist.js"></script>
 	<script src="js/recipe.js"></script>
 	<script src="js/autocreatemenu.js"></script>
+	<script src="js/datepicker.js"></script>
 	
 
 <!--styles-->

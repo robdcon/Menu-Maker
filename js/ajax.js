@@ -143,9 +143,9 @@ function Ajax()
 				var menu = $.parseJSON(response);
 
 				for (var i = 0; i < menu.length; i++) {
+					
 					if (menu[i].display_day)
-
-					txt += '<button id="'+ menu[i].id + '" class="itembtn usermenu">' + "Menu Display Date: "menu[i].display_date + ',' + menu[i].status + '</button>';
+					txt += '<button id="'+ menu[i].id + '" class="itembtn usermenu">' + "Menu Display Date: " + menu[i].display_date + ',' + menu[i].status + '</button>';
 				};
 				//console.log(menu[0].display_date);
 				//storeLocal("menu", response); // Add the item to local storage for future access

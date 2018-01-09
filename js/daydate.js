@@ -1,8 +1,8 @@
 // Create an object whose properties are a day and date in suitable display format
 
-function DayDate() 
+function DayDate(date) 
 {
-	var dateobj = new Date();
+	var dateobj = date || new Date() ;
 	var sec = dateobj.getSeconds();
 	var min = dateobj.getMinutes();
 	var hour = dateobj.getHours();

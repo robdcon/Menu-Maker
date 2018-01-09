@@ -23,15 +23,21 @@ function addDataToTemplate()
 		
 		var price = $(this).data('price'); // Set a price variable to add to the appropriate element
 		
-		$(menuitemprice).val(price); // Set the value of the target
-		
+		$(menuitemprice).val(price); // Set the value of the target		
 	})
 
-	$('#dayname').html("<h1>Daily Menu</h1>")
+
+	// Set the day of the week to the correct day name
 
 	$('#menudate').change(function()
 		{
-			console.log($(this).val())
+			var dayIndex = $('#menudate')[0]['valueAsDate']
+			
+			var dayDate = new DayDate(dayIndex) // DayDate takes the date parameter and processes it throught methods to extract string data
+			
+			var dayString = dayDate.getDayText()
+
+			$('#dayname').html(dayString)
 		})
 	
 	  $('form').find('input.menusection').each(function(ev)
