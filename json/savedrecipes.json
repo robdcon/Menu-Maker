@@ -1,0 +1,1576 @@
+{
+	"recipes":
+	[
+		{
+			"title":"Roast beef with caramelised onion gravy",
+			"img":"roast_beef-Caremelised_onion_gravy.jpg",
+			"prep": "30 MINS",
+			"cook": "1 HR, 30 MINS",
+			"difficulty":"EASY",
+			"serves": 6,
+			"course":["main","meat"],
+			"dishtype":"roast",
+			"description":"Rare roast topside is the ultimate centrepiece - make it extra special with Marmite and sweet onion gravy",
+
+			"nutrition: per serving":
+				{
+				"energy":"591",
+				"fat":"28g",
+				"saturates":"11g",
+				"carbs":"13g",
+				"sugars":"3g",
+				"fibre":"1g",
+				"protein":"72g",
+				"salt":"1.2g"
+				},
+
+			"ingredients":
+			[
+				{
+
+					"name":"black peppercorn",
+					"measure":15,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"mustard powder",
+					"measure":15,
+					"unit":"g",
+					"allergen":"mustard"
+				},
+				{
+
+					"name":"dried thyme",
+					"measure":15,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"celery seeds",
+					"measure":5,
+					"unit":"g",
+					"allergen":"celery"
+				},
+				{
+
+					"name":"olive oil",
+					"measure":15,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"topside joint of beef",
+					"measure":2,
+					"unit":"kg",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":60,
+					"unit":"g",
+					"allergen":"gluten"
+				},
+				{
+
+					"name":"stock cubes",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"caramelised onion chutney",
+					"measure":45,
+					"unit":"g",
+					"allergen":false
+				}
+
+
+			],
+
+			"method":
+
+			{
+				"step1":"Crush the peppercorns, mustard powder, thyme and celery seeds together with some salt, using a pestle and mortar. Stir in the oil, then rub it all over the beef. (If you have time, cover and chill the joint overnight to marinate. Bring the beef out of the fridge 1 hr before roasting.)",
+				"step2":"Heat oven to 190C/170C fan/gas 5 and sit the joint in a snug-ish roasting tin. Roast for 12 mins per 450g/1lb (about 55 mins for a 2kg/4lb 8oz joint) for medium-rare, or 15 mins per 450g/1lb (about 1 hr 10 mins) for medium-well.",
+				"step3":"Remove from the oven, lift onto a platter, cover with foil and rest for 30 mins. If you’re making the Yorkies, increase oven to 220C/200C fan/gas 7.",
+				"step4":"For the gravy, pour any juices from the roasting tin into a jug. Let the juices separate, then spoon 2 tbsp of the fat back into the tin – if there is no fat, use 2 tbsp butter instead. Discard any other fat. Sit the roasting tin on the hob and stir in the flour, stock cubes, onion chutney or marmalade and Marmite. Cook for 1 min, stirring well to scrape up any beefy bits stuck to the tin, then gradually stir in 750ml hot water from the kettle. Bubble to thicken to a nice consistency, then gently keep warm until ready to serve with the beef, carved into slices."
+			}
+		},
+		{
+	
+			"title":"British Pork Cassoulet",
+
+			"img":"pork_cassoulet.jpg",
+			"prep": "30 MINS - 35 MINS",
+			"cook": "1 HR, 30 MINS",
+			"difficulty":"EASY",
+			"SERVES": 4,
+			"description":"No-nonsense hearty meal that needs little or no side dishes - a great family meal",
+			"course":["main","meat"],
+			"dishtype":"casserole",
+			"nutrition: per serving":
+				{
+				"energy":"911 kcal",
+				"fat":"60g",
+				"saturates":"22g",
+				"carbs":"38g",
+				"sugars":"16g",
+				"fibre":"8g",
+				"protein":"58g",
+				"salt":"7.5g"
+				},
+
+				"ingredients":
+			[
+				{
+
+					"name":"sunflower oil",
+					"measure":15,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"pack of pork sausages",
+					"measure":450,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"back bacon chops",
+					"measure":450,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"cannellini, haricot, butter or mixed beans, drained",
+					"measure":400,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"olive oil",
+					"measure":15,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"large onion, chopped",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"medium carrots, thickly sliced",
+					"measure":3,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"chopped tomatoes",
+					"measure":400,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"chicken stock",
+					"measure":600,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"fresh white breadcrumbs",
+					"measure":25,
+					"unit":"g",
+					"allergen":"gluten"
+				}
+
+
+			],
+
+			"method":
+
+			{
+				"step1":"Heat oven to 180C/fan 160C/gas 4.",
+				"step2":"4. Quickly pan-fry the strips of pork belly in the oil, followed by the sausages and back bacon chops, until well browned.",
+				"stpe3":"Mix together the beans, onion, garlic, carrots and tomatoes in a bowl.",
+				"step4":"Starting with a spoonful of the veg, inter-layer the vegetable mix and meats in a deep braising pan (about 3 litres capacity, 7.5cm deep, preferably one that will go on top of the stove – see Gary’s tip, below). Place the bouquet garni in the centre as everything is being stacked.",
+				"step5":"Pour just enough chicken stock on top to almost cover, then bring to a simmer on top of the stove"
+			}
+		},
+		{
+	
+			"title":"BBQ Pulled Pork Burger",
+
+			"img":"pulled_pork_burger.jpg",
+			"prep": "10 MINS",
+			"cook": "5 HRs, 10 MINS",
+			"difficulty":"EASY",
+			"SERVES": 16,
+			"description":"No-nonsense hearty meal that needs little or no side dishes - a great family meal",
+			"course":["main","meat"],
+			"dishtype":"slow cook",
+			"nutrition: per serving":
+				{
+				"energy":"251 kcal",
+				"fat":"16g",
+				"saturates":"5g",
+				"carbs":"0g",
+				"sugars":"0g",
+				"fibre":"0g",
+				"protein":"26g",
+				"salt":"0.8g"
+				},
+			"ingredients":
+			[
+				{
+
+					"name":"Boneless pork shoulder",
+					"measure":2.5,
+					"unit":"kg",
+					"allergen":false
+				},
+				{
+
+					"name":"Spanish paprika",
+					"measure":10,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"mustard powder",
+					"measure":10,
+					"unit":"g",
+					"allergen":"mustard"
+				},
+				{
+
+					"name":"celery seeds",
+					"measure":5,
+					"unit":"g",
+					"allergen":"celery"
+				},
+				{
+
+					"name":"olive oil",
+					"measure":15,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"garlic salt",
+					"measure":10,
+					"unit":"g",
+					"allergen":"garlic"
+				},
+				{
+
+					"name":"onion salt",
+					"measure":10,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"Brioche buns",
+					"measure":16,
+					"unit":"",
+					"allergen":"gluten"
+				},
+				{
+
+					"name":"Sweet-and-sour pickled cucumbers",
+					"measure":45,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"Tangy slaw",
+					"measure":"",
+					"unit":"",
+					"allergen":false
+				}
+
+
+			],
+
+			"method":
+
+			{
+				"step1":"Heat oven to 150C/130C fan/gas 2. Rub the pork with 2 tbsp of the olive oil.",
+				"step2":"Heat a large non-stick pan until very hot and sear the pork on all sides until golden brown.",
+				"stpe3":"Place the meat on a wire rack in a roasting tin.",
+				"step4":"Mix the paprika, mustard powder, garlic and onion salt, and some black pepper with the liquid smoke, if using. Brush all over the meat.",
+				"step5":"Add 1 cup of water to the roasting tin, cover very tightly with foil and cook for 5 hrs or until almost falling apart.",
+				"step6":"Drain the juices from the meat into a measuring jug. Shred the pork using 2 forks, discarding the fat.",
+				"step7":"Skim off the fat from the juices. Mix 125ml of the juices with 4 tbsp BBQ sauce and pour over the meat. Keep warm until serving, or reheat.",
+				"step8":"To assemble, pile the meat into the halved brioche buns, spoon over the BBQ sauce, top with coleslaw and pickles, and sandwich together."
+			}
+		},
+		{
+	
+			"title":"Beetroot & Squash Wellingtons with Kale pesto",
+
+			"img":"beetroot_butternut_wellington.jpg",
+			"prep": "40 MINS",
+			"cook": "1 HR, 20 MINS",
+			"difficulty":"MEDIUM",
+			"SERVES": 6,
+			"description":"Put some welly in your Christmas dinner. Make these vegan Wellingtons ahead of time for a less stressed Christmas dinner. Even the meat eaters will love them!",
+			"course":["main","vegetarian"],
+			"dishtype":"roast",
+			"nutrition: per serving":
+				{
+				"energy":"669 kcal",
+				"fat":"38g",
+				"saturates":"15g",
+				"carbs":"63g",
+				"sugars":"8g",
+				"fibre":"8g",
+				"protein":"13g",
+				"salt":"1.5g"
+				},
+			"ingredients":
+			[
+				{
+
+					"name":"Red onion, cut into 8 wedges",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"Raw beetroot, peeled and cut into small chunks",
+					"measure":2.5,
+					"unit":"kg",
+					"allergen":false
+				},
+				{
+
+					"name":"Butternut squash, peeled and cut into small chunks",
+					"measure":"Half",
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"Mustard powder",
+					"measure":10,
+					"unit":"g",
+					"allergen":"mustard"
+				},
+				{
+
+					"name":"olive oil",
+					"measure":15,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"Garlic cloves",
+					"measure":4,
+					"unit":"",
+					"allergen":"garlic"
+				},
+				{
+
+					"name":"Picked thyme leaves, plus extra for sprinkling",
+					"measure":10,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"Sumac, plus extra for sprinkling",
+					"measure":10,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"Pack whole cooked chestnuts, roughly chopped",
+					"measure":180,
+					"unit":"g",
+					"allergen":"nuts"
+				},
+				{
+
+					"name":"Almond milk",
+					"measure":"20",
+					"unit":"ml",
+					"allergen":false
+				}
+
+			],
+
+			"method":
+
+			{
+				"step1":"Heat oven to 190C/170C fan/ gas 5.",
+				"step2":"Toss the onion, beetroot, squash and garlic in a roasting tin with 2 tbsp olive oil, the thyme leaves, sumac and some seasoning.",
+				"stpe3":"Roast for 45 mins until the vegetables are tender but still retain their shape, then stir in the lentils and half the chestnuts.",
+				"step4":"Squeeze the garlic cloves from their skins, reserve half and squash the other two into the lentil mixture. Leave to cool completely.",
+				"step5":"Bring a large pan of salted water to the boil, tip in the kale, cook for 1 min until wilted, then drain and run under cold water until cool.",
+				"step6":"Squeeze all the water from the kale, then put it in the small bowl of a food processor along with the reserved garlic cloves, chestnuts, the lemon juice, olive oil and some seasoning.",
+				"step7":"Blitz to a thick pesto, and season to taste.",
+				"step8":"On a lightly floured surface, unravel the sheets of puff pastry.",
+				"step9":"Cut each sheet into three widthways so that you have six strips in total then divide the kale pesto between these, followed by the roasted veg and lentils, heaping the mixture on top of the pesto and leaving one side free of filling so that it is easier to roll. ",
+				"step10":"Brush all the borders with half the milk, fold over the ends, then carefully roll the pastry lengthways to completely encase the filling into a roll.",
+				"step11":"Place your six individual Wellingtons on a baking tray lined with baking parchment and chill for at least 1 hr, or cover with cling film and leave overnight.",
+				"step12":"To bake from chilled, heat oven to 190 C/170 C fan/gas 3 and line a baking tray with parchment.",
+				"step13":"Brush the top of each Wellington with the remaining milk and sprinkle with a little sumac, then bake for 30 mins from chilled or 45 mins from frozen until crisp and golden. Scatter over extra thyme and some flaky sea salt and serve."
+			}
+		},
+		{
+	
+			"title":"Smoky spiced Jollof rice & coconut-fried plantain",
+
+			"img":"jollof_rice.jpg",
+			"prep": "10 MINS",
+			"cook": "40 MINS",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"This West African inspired dish food is full of bold, harmonious flavours. Jollof rice is a household staple, often accompanied by fried plantain",
+			"course":["main","vegetarian"],
+			"dishtype":"rice",
+			"nutrition: per serving":
+				{
+				"kcal":"479",
+				"fat":"17g",
+				"saturates":"7g",
+				"carbs":"71g",
+				"sugars":"15g",
+				"fibre":"5g",
+				"protein":"8g",
+				"salt":"0.9g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"basmati rice",
+					"measure":400,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plum tomatoes",
+					"measure":400,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"red pepper",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"red onion, halved",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"olive oil",
+					"measure":15,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"Garlic cloves",
+					"measure":4,
+					"unit":"",
+					"allergen":"garlic"
+				},
+				{
+
+					"name":"scotch bonnet chilli",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"vegetable oil or sunflower oil",
+					"measure":10,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"bay leaves",
+					"measure":4,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"thyme sprig",
+					"measure":"1",
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"cayenne pepper",
+					"measure":5,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"cumin powder",
+					"measure":5,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"ground black pepper",
+					"measure":5,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"tomato puree",
+					"measure":60,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"coconut oil",
+					"measure":60,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plantains, peeled and sliced into 1cm rounds",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				}
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Put the rice in a sieve, rinse thoroughly to remove the starch, then soak in clean cold water for 5 mins.",
+				"step2":"Drain and par-boil the rice for 5 mins until almost cooked, then drain, rinse and set aside.",
+				"stpe3":"Finely slice the remaining onion half. Heat the vegetable oil in a large, high-sided pan.",
+				"step4":"Add the sliced onion, bay and thyme, and cook on a medium heat for 8 mins until the onion is softened and aromatic.",
+				"step5":"Add the spices with 1 tsp sea salt, cook for a few mins more, then add the tomato purée and cook for 1-2 mins.",
+				"step6":"Add half the tomato and pepper mix (freeze the rest for future use). Add the semi-cooked rice and mix thoroughly to coat with the sauce. ",
+				"step7":"Add a bit more water, turn down the heat, stir and cover with a lid for 5-10 mins until cooked through. Cooking time will depend on the type of rice, so keep checking it.",
+				"step8":"Don’t worry if it catches on the bottom, this will add to the flavour. Season to taste and remove the bay leaves before serving.",
+				"step9":"To cook the plantain, simply heat the coconut oil in a high-sided pan until hot. Fry the plantain, turning occasionally, for a few mins until soft and golden. Serve with the rice."
+			}
+		},
+		
+		{
+	
+			"title":"Cashew chicken",
+
+			"img":"cashew_chicken.jpg",
+			"prep": "10 MINS",
+			"cook": "10 MINS",
+			"difficulty":"MEDIUM",
+			"SERVES": 4,
+			"description":"Tender pieces of chicken breast are stir-fried with crunchy, sweet cashew nuts in this classic Chinese dish",
+			"course":["main","poultry"],
+			"dishtype":"chinese",
+			"nutrition: per serving":
+				{
+				"kcal":"4302",
+				"fat":"17g",
+				"saturates":"3g",
+				"carbs":"7g",
+				"sugars":"1g",
+				"fibre":"1g",
+				"protein":"33g",
+				"salt":"0.2g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"boneless, skinless chicken breasts, cut into large chunks",
+					"measure":400,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"egg white",
+					"measure":1,
+					"unit":"",
+					"allergen":"egg"
+				},
+				{
+
+					"name":"sesame oil",
+					"measure":5,
+					"unit":"ml",
+					"allergen":"sesame"
+				},
+				{
+
+					"name":"corn flour",
+					"measure":10,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"groundnut oil or water",
+					"measure":300,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"groundnut oil",
+					"measure":10,
+					"unit":"ml",
+					"allergen":"garlic"
+				},
+				{
+
+					"name":"scotch bonnet chilli",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"vegetable oil or sunflower oil",
+					"measure":10,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"cashew nuts",
+					"measure":100,
+					"unit":"g",
+					"allergen":"nuts"
+				},
+				{
+
+					"name":"Shaoxing rice wine or dry Sherry",
+					"measure":"15",
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"light soya sauce",
+					"measure":15,
+					"unit":"ml",
+					"allergen":"soya"
+				},
+				{
+
+					"name":"shredded spring onion",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				}
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Put the chicken in a bowl with the egg white, sesame oil, cornflour and 1 tsp salt, and mix well.",
+				"step2":"Chill for 20 mins.",
+				"stpe3":"If you are using oil for velveting the chicken, heat a wok until very hot and then add the oil.",
+				"step4":"When it is very hot, remove the wok from the heat and immediately add the chicken, stirring vigorously to prevent it sticking.",
+				"step5":"After about 2 mins, when the chicken turns white, quickly drain it and all of the oil into a stainless steel colander set over a bowl.Discard the oil.",
+				"step6":"If you are using water instead of oil, do exactly the same but bring the water to the boil in a saucepan before adding the chicken. It will take about 4 mins for the chicken to turn white in the water.",
+				"step7":"If you have used a wok, wipe it clean. Heat it until it is very hot, then add the 2 tsp of groundnut oil.",
+				"step8":"Add the cashew nuts and stir-fry for 1 min.",
+				"step9":"Add the rice wine or dry Sherry and soy sauce.",
+				"step10":"Return the chicken to the wok and stir-fry for 2 mins.",
+				"step11":"Scatter over the spring onions and serve immediately."
+			}
+		},
+		{
+	
+			"title":"Beef Bourguignon",
+
+			"img":"beef_bourginon.jpg",
+			"prep": "45 MINS",
+			"cook": "3 HOURS, 30 MINS",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"The secret to this super-rich beef casserole is to use all wine and no stock",
+			"course":["main","meat"],
+			"dishtype":"french",
+			"nutrition: per serving":
+				{
+				"kcal":"767",
+				"fat":"22g",
+				"saturates":"4g",
+				"carbs":"6g",
+				"sugars":"10g",
+				"fibre":"4g",
+				"protein":"30g",
+				"salt":"0.8g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"beef shoulder chunks",
+					"measure":6,
+					"unit":"kg",
+					"allergen":false
+				},
+				{
+
+					"name":"bat leaves",
+					"measure":3,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"sesame oil",
+					"measure":5,
+					"unit":"ml",
+					"allergen":"sesame"
+				},
+				{
+
+					"name":"corn flour",
+					"measure":10,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"bunch of thyme",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"red wine",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"large carrots, cut into chunks",
+					"measure":6,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":"45",
+					"unit":"g",
+					"allergen":"gluten"
+				},
+				{
+
+					"name":"tomato puree",
+					"measure":15,
+					"unit":"ml",
+					"allergen":"soya"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Tip the beef into a large bowl with the bay leaves, thyme, wine and some pepper, then cover and leave in the fridge overnight.",
+				"step2":"Heat oven to 200C/180C fan/gas 6. Place a colander over another large bowl and strain the marinated meat, keeping the wine. Heat half the oil in a large frying pan, then brown the meat in batches, transferring to a plate once browned. When all the meat is browned, pour a little wine into the now-empty frying pan and bubble to release any caramelised bits from the pan.",
+				"stpe3":"Heat the rest of the oil in a large casserole and fry the carrots and chopped onions until they start to colour. Stir in the flour for 1 min, then add the tomato purée. Add the beef and any juices, the wine from the frying pan and the rest of the wine and herbs. Season and bring to a simmer. Give everything a good stir, then cover. Transfer to the oven and bake for 2 hrs until the meat is really tender. Cool. Will freeze for up to 3 months.",
+				"step4":"To serve, defrost completely overnight in the fridge if frozen, then place on a low heat to warm through. Meanwhile, heat the butter in a frying pan and add the bacon and pearl onions. Sizzle for about 10 mins until the bacon starts to crisp and the onions soften and colour. Add the mushrooms and fry for another 5 mins, then stir everything into the stew and heat for 10 mins more. Serve scattered with chopped parsley.",
+				"step5":"After about 2 mins, when the chicken turns white, quickly drain it and all of the oil into a stainless steel colander set over a bowl.Discard the oil."
+			}
+		},
+		{
+	
+			"title":"Chicken casserole with herby dumplings",
+
+			"img":"beef_bourginon.jpg",
+			"prep": "30 MINS",
+			"cook": "1 HOURS, 30 MINS",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"Bypass the suet and make lighter dumplings for this family-friendly one-pot stew",
+			"course":["main","poultry"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"740",
+				"fat":"26g",
+				"saturates":"10g",
+				"carbs":"23g",
+				"sugars":"17g",
+				"fibre":"7g",
+				"protein":"40g",
+				"salt":"0.8g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"skinless chicken pieces - a mixture of thighs and drumsticks on the bone, and halved chicken breasts",
+					"measure":12,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":45,
+					"unit":"g",
+					"allergen":"gluten"
+				},
+				{
+
+					"name":"sunflower oil",
+					"measure":5,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, dices",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"carrots, dices",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"bay leaves",
+					"measure":3,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"wine",
+					"measure":"1",
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"tomato puree",
+					"measure":15,
+					"unit":"ml",
+					"allergen":"soya"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Heat oven to 180C/160C fan/gas 4. Toss the chicken pieces with the flour and some salt and pepper, to coat them – it’s easy to do this in a plastic food bag.",
+				"step2":"Heat the oil in a casserole with a lid. Brown the chicken pieces well on all sides – you’ll need to do this in batches. Remove all the pieces to a plate, and tip the onions, carrot, lardons, bay and thyme into the pan. Cook gently for 10 mins until the onion is softened.",
+				"stpe3":"Return the chicken pieces, with any juices that have collected on the plate. Then pour in the red wine and tomato paste and crumble in the stock cube. Add a splash of water if you need, until the chicken is almost covered. Bring to the boil, then cover with a lid and bake in the oven for 20 mins. Remove the lid and bake for another 10 mins while you make the dumplings.",
+				"step4":"Rub the butter into the flour with your fingertips until it feels like fine breadcrumbs. Stir in the herbs with ½ tsp salt and some pepper. Drizzle over 150ml water, and stir in quickly with a cutlery knife to form a light dough. Use floured hands to shape into ping pong sized balls.",
+				"step5":"Place the dumplings on top of the stew and bake for 20 mins more until the dumplings are cooked through."
+			}
+		},
+		{
+	
+			"title":"Sausage & bean casserole",
+
+			"img":"sausage_bean_casserole.jpg",
+			"prep": "15 MINS",
+			"cook": "1 HOURS, ",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"Bypass the suet and make lighter dumplings for this family-friendly one-pot stew",
+			"course":["main","poultry"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"519",
+				"fat":"20g",
+				"saturates":"8g",
+				"carbs":"20g",
+				"sugars":"15g",
+				"fibre":"8g",
+				"protein":"34g",
+				"salt":"0.4g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"skinless chicken pieces - a mixture of thighs and drumsticks on the bone, and halved chicken breasts",
+					"measure":12,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":45,
+					"unit":"g",
+					"allergen":"gluten"
+				},
+				{
+
+					"name":"sunflower oil",
+					"measure":5,
+					"unit":"ml",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, dices",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"carrots, dices",
+					"measure":2,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"bat leaves",
+					"measure":3,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"wine",
+					"measure":"1",
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"tomato puree",
+					"measure":15,
+					"unit":"ml",
+					"allergen":"soya"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Heat oven to 180C/160C fan/gas 4. Toss the chicken pieces with the flour and some salt and pepper, to coat them – it’s easy to do this in a plastic food bag.",
+				"step2":"Heat the oil in a casserole with a lid. Brown the chicken pieces well on all sides – you’ll need to do this in batches. Remove all the pieces to a plate, and tip the onions, carrot, lardons, bay and thyme into the pan. Cook gently for 10 mins until the onion is softened.",
+				"stpe3":"Return the chicken pieces, with any juices that have collected on the plate. Then pour in the red wine and tomato paste and crumble in the stock cube. Add a splash of water if you need, until the chicken is almost covered. Bring to the boil, then cover with a lid and bake in the oven for 20 mins. Remove the lid and bake for another 10 mins while you make the dumplings.",
+				"step4":"Rub the butter into the flour with your fingertips until it feels like fine breadcrumbs. Stir in the herbs with ½ tsp salt and some pepper. Drizzle over 150ml water, and stir in quickly with a cutlery knife to form a light dough. Use floured hands to shape into ping pong sized balls.",
+				"step5":"Place the dumplings on top of the stew and bake for 20 mins more until the dumplings are cooked through."
+			}
+		},
+		{
+	
+			"title":"Fish Pie",
+
+			"img":"fish_pie.jpg",
+			"prep": "15 MINS",
+			"cook": "1 HOURS, ",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"Bypass the suet and make lighter dumplings for this family-friendly one-pot stew",
+			"course":["main","fish"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"519",
+				"fat":"20g",
+				"saturates":"8g",
+				"carbs":"20g",
+				"sugars":"15g",
+				"fibre":"8g",
+				"protein":"34g",
+				"salt":"0.4g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"Thick white fish fillets, such as cod or haddock, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"thick salmon fillet, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"smoked haddock (preferably undyed)",
+					"measure":300,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"full fat or semi- skimmed milk",
+					"measure":700,
+					"unit":"g",
+					"allergen":"dairy"
+				},
+				{
+
+					"name":"medium onion cut into thin wedges",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"butter",
+					"measure":75,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":"75",
+					"unit":"g",
+					"allergen":"gluten"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Place the fish fillets in a large, wide saucepan and pour over the milk. Add the onion wedges and bay leaves, tucking them in around the fish. Bring to a very gentle simmer, then cover with a lid and remove from the heat immediately. Leave to stand and infuse for 10 mins or until the fish is just cooked. Drain the fish in a colander over a large jug to reserve the infused milk, then tip the fish into a bowl. Set aside.",
+				"step2":"Meanwhile, make the topping. Put the potatoes in a large saucepan of cold water, bring to the boil, then simmer for 15 mins or until the potatoes are soft but not falling apart. Drain well, return to the pan and mash with the butter, half the cheese and the crème fraîche until smooth. Season to taste and set aside.",
+				"stpe3":"To finish the filling, melt the butter in a medium saucepan and stir in the flour. Cook for a few secs, then gradually add the infused milk, stirring over a medium heat for 3 mins until the sauce is smooth and thick. Stir in the spinach and wine or vermouth, if using, and cook for 2 mins more. Remove from the heat and stir in the dill. Season to taste.",
+				"step4":"Heat oven to 200C/180C fan/gas 6. Spoon a third of the sauce into the base of a 3-litre shallow rectangular dish. Scatter half the fish fillets over the sauce, breaking them into chunky pieces and discarding the skin, any stray bones, onion and bay leaves as you go. Pour over another third of the sauce, then top with more fish. Continue the layers once more, finishing with sauce.",
+				"step5":"Spoon the potato over the fish mixture, starting at the edges. Swirl the potato with the back of a spoon and sprinkle over the remaining cheese. Place the dish on a baking tray and bake in the centre of the oven for 45 mins or until the potato is golden and the filling is bubbling."
+			}
+		},
+		{
+	
+			"title":"Baked piri-piri tilapia with crushed potatoes",
+
+			"img":"baked-piri-piri-tilapia-with-crushed-potatoes.jpg",
+			"prep": "15 MINS",
+			"cook": "1 HOURS, ",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"A healthy low-fat, low-calorie fish dish that's bursting with flavour as well as being rich in fibre, folate, iron and vitamin C",
+			"course":["main","fish"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"519",
+				"fat":"20g",
+				"saturates":"8g",
+				"carbs":"20g",
+				"sugars":"15g",
+				"fibre":"8g",
+				"protein":"34g",
+				"salt":"0.4g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"Thick white fish fillets, such as cod or haddock, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"thick salmon fillet, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"smoked haddock (preferably undyed)",
+					"measure":300,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"full fat or semi- skimmed milk",
+					"measure":700,
+					"unit":"g",
+					"allergen":"dairy"
+				},
+				{
+
+					"name":"medium onion cut into thin wedges",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"butter",
+					"measure":75,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":"75",
+					"unit":"g",
+					"allergen":"gluten"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Place the fish fillets in a large, wide saucepan and pour over the milk. Add the onion wedges and bay leaves, tucking them in around the fish. Bring to a very gentle simmer, then cover with a lid and remove from the heat immediately. Leave to stand and infuse for 10 mins or until the fish is just cooked. Drain the fish in a colander over a large jug to reserve the infused milk, then tip the fish into a bowl. Set aside.",
+				"step2":"Meanwhile, make the topping. Put the potatoes in a large saucepan of cold water, bring to the boil, then simmer for 15 mins or until the potatoes are soft but not falling apart. Drain well, return to the pan and mash with the butter, half the cheese and the crème fraîche until smooth. Season to taste and set aside.",
+				"stpe3":"To finish the filling, melt the butter in a medium saucepan and stir in the flour. Cook for a few secs, then gradually add the infused milk, stirring over a medium heat for 3 mins until the sauce is smooth and thick. Stir in the spinach and wine or vermouth, if using, and cook for 2 mins more. Remove from the heat and stir in the dill. Season to taste.",
+				"step4":"Heat oven to 200C/180C fan/gas 6. Spoon a third of the sauce into the base of a 3-litre shallow rectangular dish. Scatter half the fish fillets over the sauce, breaking them into chunky pieces and discarding the skin, any stray bones, onion and bay leaves as you go. Pour over another third of the sauce, then top with more fish. Continue the layers once more, finishing with sauce.",
+				"step5":"Spoon the potato over the fish mixture, starting at the edges. Swirl the potato with the back of a spoon and sprinkle over the remaining cheese. Place the dish on a baking tray and bake in the centre of the oven for 45 mins or until the potato is golden and the filling is bubbling."
+			}
+		},
+		{
+	
+			"title":"Baked piri-piri tilapia with crushed potatoes",
+
+			"img":"baked-piri-piri-tilapia-with-crushed-potatoes.jpg",
+			"prep": "15 MINS",
+			"cook": "1 HOURS, ",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"A healthy low-fat, low-calorie fish dish that's bursting with flavour as well as being rich in fibre, folate, iron and vitamin C",
+			"course":["main","fish"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"519",
+				"fat":"20g",
+				"saturates":"8g",
+				"carbs":"20g",
+				"sugars":"15g",
+				"fibre":"8g",
+				"protein":"34g",
+				"salt":"0.4g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"Thick white fish fillets, such as cod or haddock, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"thick salmon fillet, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"smoked haddock (preferably undyed)",
+					"measure":300,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"full fat or semi- skimmed milk",
+					"measure":700,
+					"unit":"g",
+					"allergen":"dairy"
+				},
+				{
+
+					"name":"medium onion cut into thin wedges",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"butter",
+					"measure":75,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":"75",
+					"unit":"g",
+					"allergen":"gluten"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Place the fish fillets in a large, wide saucepan and pour over the milk. Add the onion wedges and bay leaves, tucking them in around the fish. Bring to a very gentle simmer, then cover with a lid and remove from the heat immediately. Leave to stand and infuse for 10 mins or until the fish is just cooked. Drain the fish in a colander over a large jug to reserve the infused milk, then tip the fish into a bowl. Set aside.",
+				"step2":"Meanwhile, make the topping. Put the potatoes in a large saucepan of cold water, bring to the boil, then simmer for 15 mins or until the potatoes are soft but not falling apart. Drain well, return to the pan and mash with the butter, half the cheese and the crème fraîche until smooth. Season to taste and set aside.",
+				"stpe3":"To finish the filling, melt the butter in a medium saucepan and stir in the flour. Cook for a few secs, then gradually add the infused milk, stirring over a medium heat for 3 mins until the sauce is smooth and thick. Stir in the spinach and wine or vermouth, if using, and cook for 2 mins more. Remove from the heat and stir in the dill. Season to taste.",
+				"step4":"Heat oven to 200C/180C fan/gas 6. Spoon a third of the sauce into the base of a 3-litre shallow rectangular dish. Scatter half the fish fillets over the sauce, breaking them into chunky pieces and discarding the skin, any stray bones, onion and bay leaves as you go. Pour over another third of the sauce, then top with more fish. Continue the layers once more, finishing with sauce.",
+				"step5":"Spoon the potato over the fish mixture, starting at the edges. Swirl the potato with the back of a spoon and sprinkle over the remaining cheese. Place the dish on a baking tray and bake in the centre of the oven for 45 mins or until the potato is golden and the filling is bubbling."
+			}
+		},
+		{
+	
+			"title":"Steamed salmon & veg rice bowl",
+
+			"img":"steamed-salmon-veg-rice-bowl.jpg",
+			"prep": "15 MINS",
+			"cook": "1 HOURS, ",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"A healthy low-fat, low-calorie fish dish that's bursting with flavour as well as being rich in fibre, folate, iron and vitamin C",
+			"course":["main","fish"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"519",
+				"fat":"20g",
+				"saturates":"8g",
+				"carbs":"20g",
+				"sugars":"15g",
+				"fibre":"8g",
+				"protein":"34g",
+				"salt":"0.4g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"Thick white fish fillets, such as cod or haddock, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"thick salmon fillet, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"smoked haddock (preferably undyed)",
+					"measure":300,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"full fat or semi- skimmed milk",
+					"measure":700,
+					"unit":"g",
+					"allergen":"dairy"
+				},
+				{
+
+					"name":"medium onion cut into thin wedges",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"butter",
+					"measure":75,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":"75",
+					"unit":"g",
+					"allergen":"gluten"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Place the fish fillets in a large, wide saucepan and pour over the milk. Add the onion wedges and bay leaves, tucking them in around the fish. Bring to a very gentle simmer, then cover with a lid and remove from the heat immediately. Leave to stand and infuse for 10 mins or until the fish is just cooked. Drain the fish in a colander over a large jug to reserve the infused milk, then tip the fish into a bowl. Set aside.",
+				"step2":"Meanwhile, make the topping. Put the potatoes in a large saucepan of cold water, bring to the boil, then simmer for 15 mins or until the potatoes are soft but not falling apart. Drain well, return to the pan and mash with the butter, half the cheese and the crème fraîche until smooth. Season to taste and set aside.",
+				"stpe3":"To finish the filling, melt the butter in a medium saucepan and stir in the flour. Cook for a few secs, then gradually add the infused milk, stirring over a medium heat for 3 mins until the sauce is smooth and thick. Stir in the spinach and wine or vermouth, if using, and cook for 2 mins more. Remove from the heat and stir in the dill. Season to taste.",
+				"step4":"Heat oven to 200C/180C fan/gas 6. Spoon a third of the sauce into the base of a 3-litre shallow rectangular dish. Scatter half the fish fillets over the sauce, breaking them into chunky pieces and discarding the skin, any stray bones, onion and bay leaves as you go. Pour over another third of the sauce, then top with more fish. Continue the layers once more, finishing with sauce.",
+				"step5":"Spoon the potato over the fish mixture, starting at the edges. Swirl the potato with the back of a spoon and sprinkle over the remaining cheese. Place the dish on a baking tray and bake in the centre of the oven for 45 mins or until the potato is golden and the filling is bubbling."
+			}
+		},
+		{
+	
+			"title":"Salmon burgers with kale salsa",
+
+			"img":"salmon-burgers-with-kale-salsa.jpg",
+			"prep": "15 MINS",
+			"cook": "1 HOURS, ",
+			"difficulty":"EASY",
+			"SERVES": 6,
+			"description":"A healthy low-fat, low-calorie fish dish that's bursting with flavour as well as being rich in fibre, folate, iron and vitamin C",
+			"course":["main","fish"],
+			"dishtype":"english",
+			"nutrition: per serving":
+				{
+				"kcal":"519",
+				"fat":"20g",
+				"saturates":"8g",
+				"carbs":"20g",
+				"sugars":"15g",
+				"fibre":"8g",
+				"protein":"34g",
+				"salt":"0.4g"
+				},
+				"ingredients":
+			[
+				{
+
+					"name":"Thick white fish fillets, such as cod or haddock, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"thick salmon fillet, unskinned",
+					"measure":500,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"smoked haddock (preferably undyed)",
+					"measure":300,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"full fat or semi- skimmed milk",
+					"measure":700,
+					"unit":"g",
+					"allergen":"dairy"
+				},
+				{
+
+					"name":"medium onion cut into thin wedges",
+					"measure":1,
+					"unit":"",
+					"allergen":false
+				},
+				{
+
+					"name":"bacon lardon, smoked or unsmoked, or streaky rashers, snipped",
+					"measure":2,
+					"unit":"l",
+					"allergen":false
+				},
+				{
+
+					"name":"onions, roughly chopped",
+					"measure":200,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"butter",
+					"measure":75,
+					"unit":"g",
+					"allergen":false
+				},
+				{
+
+					"name":"plain flour",
+					"measure":"75",
+					"unit":"g",
+					"allergen":"gluten"
+				}
+				
+				
+
+			],
+
+			"method":
+
+			{
+				"step1":"Place the fish fillets in a large, wide saucepan and pour over the milk. Add the onion wedges and bay leaves, tucking them in around the fish. Bring to a very gentle simmer, then cover with a lid and remove from the heat immediately. Leave to stand and infuse for 10 mins or until the fish is just cooked. Drain the fish in a colander over a large jug to reserve the infused milk, then tip the fish into a bowl. Set aside.",
+				"step2":"Meanwhile, make the topping. Put the potatoes in a large saucepan of cold water, bring to the boil, then simmer for 15 mins or until the potatoes are soft but not falling apart. Drain well, return to the pan and mash with the butter, half the cheese and the crème fraîche until smooth. Season to taste and set aside.",
+				"stpe3":"To finish the filling, melt the butter in a medium saucepan and stir in the flour. Cook for a few secs, then gradually add the infused milk, stirring over a medium heat for 3 mins until the sauce is smooth and thick. Stir in the spinach and wine or vermouth, if using, and cook for 2 mins more. Remove from the heat and stir in the dill. Season to taste.",
+				"step4":"Heat oven to 200C/180C fan/gas 6. Spoon a third of the sauce into the base of a 3-litre shallow rectangular dish. Scatter half the fish fillets over the sauce, breaking them into chunky pieces and discarding the skin, any stray bones, onion and bay leaves as you go. Pour over another third of the sauce, then top with more fish. Continue the layers once more, finishing with sauce.",
+				"step5":"Spoon the potato over the fish mixture, starting at the edges. Swirl the potato with the back of a spoon and sprinkle over the remaining cheese. Place the dish on a baking tray and bake in the centre of the oven for 45 mins or until the potato is golden and the filling is bubbling."
+			}
+		}
+		
+
+	]
+}

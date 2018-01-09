@@ -1,0 +1,1319 @@
+{
+	"recipes":
+	[
+		{
+			
+			"title":"Spiced Chicken, Spinach &amp; Sweet Potato Stew",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":"garlic"
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":false
+				}
+
+			],
+			"dishtype":"poultry"
+			
+
+		},
+		{
+			
+			"title":"Vegetable Biriyani",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Quorn Lasagne",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Ratatouille",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Mushroom & Broccoli Tagliatelle",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Butternut Squash Lasagne",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Risotto Verde",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Tomato & Basil Quiche",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetarian"
+			
+
+		},
+		{
+			
+			"title":"Spiced Chicken, Spinach &amp; Sweet Potato Stew",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+
+		},
+
+		
+
+		{
+			
+			"title":"Spiced Beef, Broccoli &amp; Butternut Stew",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+		{
+			
+			"title":"Beef Wellington",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+		{
+			
+			"title":"Beef in Blackbean Sauce",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+		{
+			
+			"title":"Moroccan Lamb Shanks",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+
+		{
+			
+			"title":"Spiced Lamb Chops",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+
+		{
+			
+			"title":"Sweet & Sour Pork",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+
+		{
+			
+			"title":"Grilled Pork Loin Steak with Brambley Apple Sauce",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+		{
+			
+			"title":"Spicy Meat Balls in Tomato & Basil Sauce",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+		{
+			
+			"title":"Spaghetti Bolognese",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+
+		},
+
+
+
+
+
+
+		{
+			
+			"title":"Spiced Fish, Aubergine &amp; Corgette",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"fish"
+			
+
+		},
+
+
+		{
+			
+			"title":"Smoked Mackerel",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"fish"
+			
+
+		},
+
+		{
+			
+			"title":"Tiger Prawn Coconut Curry",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"fish"
+			
+
+		},
+
+
+		{
+			
+			"title":"Smoked Haddock & Tarragon Sauce",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"fish"
+			
+
+		},
+
+		{
+			
+			"title":"Chargrilled Red Snapper",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"fish"
+			
+
+		},
+
+
+
+		{
+			
+			"title":"Mediterranean Pasta Bake",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"veg"
+			
+
+		},
+		{
+			"title":"Tuscan Bean Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"French Onion Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Cream of Chicken Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Red Pepper & Tomato Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Sweet Potato & Coconut Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Beef Goulash Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Lilghtly Spiced Cauliflower Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Borsch Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Lentil & Bacon Soup",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Minestrone",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"soup"
+			
+		},
+		{
+			"title":"Chicken Fajitas",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+		},
+		{
+			"title":"Chicken Chow Mein",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+		},
+		{
+			"title":"Cajun Creole Chicken Stew",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+		},
+		{
+			"title":"Spicy Chicken Kebabs",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+		},
+		{
+			"title":"Poached Chicken Breast in Mushroom Sauce",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+		},
+		{
+			"title":"Chicken Jalfrezi",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"poultry"
+			
+		},
+		{
+			"title":"Beef Bourgignon",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+		},
+		{
+			"title":"Beef Balti",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"meat"
+			
+		},
+		{
+			"title":"Fish Pie",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"fish"
+			
+		},
+		{
+			"title":"Mushroom Tagliatelle with Broccoli",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"veg"
+			
+		},
+		{
+			"title":"New Potatoes",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"potato"
+			
+		},
+		{
+			"title":"Basmati Rice",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"rice"
+			
+		},
+		{
+			"title":"Chips",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"potato"
+			
+		},
+		{
+			"title":"Steamed vegetables",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetable"
+			
+		},
+		{
+			"title":"Roasted root vegetables",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetable"
+		},
+		{
+			"title":"Grilled Mediterranean vegetables",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetable"
+		},
+		{
+			"title":"Sauteed Greens",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"vegetable"
+		},
+		{
+			"title":"Roast Potatoes",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"potato"
+		},
+		{
+			"title":"Mashed Potato",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"potato"
+		},
+		{
+			"title":"Sweet Potato",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"potato"
+		},
+		{
+			"title":"Pilaf Rice",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"rice"
+		},
+		{
+			"title":"Rice & Peas",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"rice"
+		},
+		{
+			"title":"Vegetable Rice",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"rice"
+		},
+		{
+			"title":"Coconut rice",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"rice"
+		},
+		{
+			"title":"Pilau rice",
+			"ingredients":
+			[
+				{
+					"title":"Garlic",
+					"allergen":true
+				},
+				{
+					"title":"chilli",
+					"allergen":false
+				},
+				{
+					"title":"celery",
+					"allergen":true
+				}
+
+			],
+			"dishtype":"rice"
+		}
+
+
+
+
+
+		
+		
+	]
+
+	
+}

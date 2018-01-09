@@ -1,0 +1,97 @@
+#login-status
+{
+	display: inline-block;
+	float: right;
+
+}
+#login-status ul li
+{
+	display: inline-block;
+	float: left;
+	margin: .5em;
+	padding: .2em;
+	
+}
+#login-status ul li a
+{
+	text-decoration: none;
+
+	
+}
+
+form#login-form, form#register-form
+{
+	border-radius: 5px;
+	background-color: #28245f;
+	border: 1px solid #53d8fb;
+	color: #53d8fb;
+	width:40%;
+	margin: 3em auto;
+	padding: 2em;	
+	text-align: center;
+
+}
+
+legend
+{
+	color: #53d8fb;
+	text-align: center;
+}
+button#submitdetails, input
+{
+	 color:#28245f;
+}
+
+form#login-form button 
+{
+	display: inline-block;
+	margin: 2em auto;
+	width: 15em;
+}
+form#login-form input 
+{
+	width:60%;
+}
+form#login-form label 
+{
+	width: 1em;
+}
+.errormsg
+{
+	margin-top:1em;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+}
+span.error
+{
+	font-size: .8em;
+	color: rgb(255,0,0);
+}
+/*CODE TO HIDE LABEL CONTROLS WHILE KEEPING ACCESSIBILITY*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*CENTRE PLACEHOLDER TEXT (http://stackoverflow.com/questions/7381446/center-html-input-text-field-placeholder)*/
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}

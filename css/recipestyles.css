@@ -1,0 +1,115 @@
+
+#recipe
+{
+	width: 100%;	
+	background-color:#fff;	
+	border: 1px solid #28245f;
+	padding: 1em;
+	display: inline-block;
+
+}
+#recipe-select-container
+{
+
+	display: block;
+	margin: 0 auto;
+
+}
+.reciperequest
+{
+	padding: 1em;
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	border: 1px solid #000;
+}
+
+#image
+{
+	max-width: 500px;
+}
+#image img
+{
+	width: 100%;
+}
+h1.recipe-heading
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+#description, #serving, #allergens, #difficulty
+{
+	display: block;
+}
+#description
+{
+	margin-top: 1em;
+	font-size: 1.2em;
+	font-style: italic;
+}
+#serving
+{
+	margin-top: 1em;
+	font-size: 1em;
+}
+#recipe div 
+{
+	display: block;
+	margin: 1em 0 1em 0;
+}
+#allergens
+{
+	width: 100%;
+	display: block;
+}
+#nutrition
+{
+	border: 1px solid #000;
+
+}
+#nutrition thead
+{
+	padding:1em;
+}
+#nutrition td, #nutrition th
+{
+	border: 1px solid #000;
+	padding: .2em;
+}
+#nutrition td
+{
+	text-align: center;
+}
+#method ol
+{
+	padding: .5em;
+}
+#recipe h3
+{
+	font-weight: bold;
+	display: inline-block;
+}
+#recipe ul li, #recipe ol li
+{
+	padding: .2em 1em .2em 1em;
+}
+#recipe ul
+{
+	padding: .5em;
+	list-style: disc;
+}
+span#cooking-mins, span#prep-mins, span#difficulty-level, span#serves, span#allergen-list
+{
+	float: none;
+}
+
+/*#recipetitle
+{
+	border: 1px solid #000;
+	float: left;
+	display: inline-block;
+	width: 50%;
+	
+}*/
+
