@@ -1,5 +1,95 @@
-// Uses template-setup.js
-// Used by 
+// Display a blank menu template in the specified DOM element
+
+function displayTemplate(container) 
+{
+	$.get('http://localhost/wrp/menutemplate.html', function(data)
+	{
+		$(container).html(data);
+		$('#template').on('submit', function(event) // Prevent page refresh after saving menu
+		{			
+			event.preventDefault();
+		})
+	})				
+}
+
+// Add data attributes to input section to specify constraints for menu inputs
+
+function addSectionData()
+{
+	$.getScript('js/template-setup.js', function(){addDataToTemplate()})
+}
+
+// Add event listeners to each section to fire on click/focus event
+
+function addSectionListeners()
+{
+	$.getScript('js/template-setup.js', function(){addListenersToSections()})
+}
+
+//
+function getTemplateDateObj()
+{
+	
+	var dateobj = getTemplateDay($('.menuday'), $('.menudate'));
+
+	return dateobj;
+}
+
+function getTemplateDay(daysection, datesection) // Called by menu.js
+{
+	
+	var day = $(daysection).html();
+	var date = $(datesection).val();
+	var menudateobj = [];
+	menudateobj['menuday'] = day;
+	menudateobj['menudate'] = date;
+	
+	return menudateobj;
+
+}
+
+function getItems() 
+{
+	var menu = [];
+	inputs = $('.field');
+
+	for (var i = 0; i < inputs.length; i++) 
+	{
+		// Select elements to extract data from & store in a variable
+		var title = $('input.menusection')[i]
+		var price = $('input.price')[i]
+		var allergens = $('.allergens')[i]
+		var dishID = $('.menusection')[i];
+		
+		var item = getTemplateItem(title, dishID, allergens, price)
+		// Set an identifier for each object
+		
+		menu.push(item);
+			
+	};
+	
+	return menu;
+}
+
+function getTemplateItem(titlesection, dishtypesection, allergensection, pricesection)
+{
+	
+	var title = titlesection.value;
+	var allergens = allergensection.innerHTML;
+	var price = pricesection.value;
+	var dishtype = dishtypesection.id;
+
+// Create new instance of UserMenuItem with the values as its properties
+
+	var item = new UserMenuItem();
+	item.setTitle(title);
+	item.setAllergens(allergens);
+	item.setPrice(price);
+	item.setDishType(dishtype);
+
+	return item;
+
+} 
 
 function Template() 
 {	
@@ -81,12 +171,12 @@ function Template()
 		
 		return menu;
 	}
-	this.getTemplateDateObj = function()
-	{
+	// this.getTemplateDateObj = function()
+	// {
 		
-		var dateobj = this.getTemplateDay($('.menuday'), $('.menudate'));
-		return dateobj;
-	}
+	// 	var dateobj = this.getTemplateDay($('.menuday'), $('.menudate'));
+	// 	return dateobj;
+	// }
 	this.getTemplateItem = function(titlesection, dishtypesection, allergensection, pricesection)
 	{
 		
@@ -106,15 +196,16 @@ function Template()
 		return item;
 
 	} 
-	this.getTemplateDay = function(daysection, datesection)
+	this.getTemplateDay = function(daysection, datesection) // Called by menu.js
 	{
 		
-		var day = $(daysection).val();
+		var day = $(daysection).html();
 		var date = $(datesection).val();
 		var menudateobj = [];
 		menudateobj['menuday'] = day;
 		menudateobj['menudate'] = date;
 		return menudateobj;
+
 	}
 	
 	

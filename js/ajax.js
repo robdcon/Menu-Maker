@@ -1,453 +1,667 @@
 // AJAX request to get all items of a specific dishType and display them in the #resultslist section of the UI
-function Ajax()
+function saveMenuString(menu) 
+{
+	var data = JSON.stringify(menu);
+	
+	$.ajax
+	({
+		type:'POST',
+		url:'php/savemenu.php',
+		data: {dataString:data},
+
+		success:function(res)
+		{
+			alert('Menu saved to your profile!')
+			console.log("Success : Menu sent to server");
+
+		},
+		error: function()
+		{
+			alert('Sorry, the menu could not be saved,\ncheck you are logged in. ')
+			console.log("Fail: Menu not sent, check connection")
+		}
+
+	})
+}
+
+function getMenuString() // Access the database to find matching records for saved menus
 {
 
-	this.getRecipeTitles = function(itemtype)
-
-	{
-		 
-		var itemtype = itemtype;		
-		$.ajax(
-		{
-
-		    url: 'http://localhost/wrp/json/savedrecipes.json', 
-		    type: 'GET',
-		    dataType: 'json',
-		    success : function(response) 
-		    {
-		    	var txt = '';
-		    
-		    	$.each(response.recipes, function(index)
-		    	{
-
-		    		if(response.recipes[index].course[1] == itemtype)
-		    		{
-		    		//FILTER RESULTS BY DISHTYPE
-			    	txt += '<li><img src="img/'+ response.recipes[index].img +'" alt="recipe picture"><div class="dishlistitem '+ response.recipes[index].dishtype +'" id="'+ response.recipes[index].dishtype + index +'" class="itembtn">' + response.recipes[index].title.replace(/&amp;+/g,'&') + '</div></a></li>'; 
-			    	// alert(response.recipes[index].title);
-			    	
-				    }
+	$.ajax
+	({
 		
-		    	})
+		type:'GET',
+		url: 'php/getsavedmenus.php',
+		data: 'json',        
+		success:function(response)
+		{
+			
+			
+			var txt = "";
+			var menu = $.parseJSON(response);
 
-		    	$('#resultslist').html(txt);
-		    	
-		    },
-		    error : function (xhr, ajaxOptions, thrownError)
-		    {  
-		        console.log(xhr.status);          
-		        console.log(thrownError);
+			for (var i = 0; i < menu.length; i++) {
+				
+				if (menu[i].display_day)
+				txt += '<button id="'+ menu[i].id + '" class="itembtn savedmenu">' + "Menu for: " + menu[i].display_day + ", " + menu[i].display_date + ',' + menu[i].status + '</button>';
+			};
+			//console.log(menu[0].display_date);
+			//storeLocal("menu", response); // Add the item to local storage for future access
 
-		    } 
-		    
-		});
-	}
+			//console.log('PASS');
+			
+			$('#results-list').html("<div id='usermenu'>"+txt+"</div>"); // Add the results to the results list			
+		},
+		error:function(response)
+		{
+			response + '</br>' + console.log('FAIL');
+		}
+	})
 
-	this.getAllergens = function(dishname, sectionID) 
+}
+
+function saveRecipeData(recipeData)
+{
+	var data = recipeData.toString();
+
+	// $.post('http://localhost/wrp/php/saverecipe.php', data)
+	// .done(function(response, data)
+	// {
+	// 	console.log(response)
+	// })
+	
+	$.post
+	({
+		type:'POST',
+		url:'php/saverecipe.php',
+		data:data,
+		dataType:'text',
+		
+		success:function(res)
+		{
+			//alert('Recipe saved to your profile!')
+			console.log("Success : Menu sent to server");
+
+		},
+		error: function()
+		{
+			alert('Sorry, the menu could not be saved,\ncheck you are logged in. ')
+			console.log("Fail: Menu not sent, check connection")
+		}
+
+	})
+}
+
+function getUserRecipes()
+{
+
+	var txt ="";
+
+	var recipe = 
+	$.ajax
+	({		
+		type:'GET',
+		url: 'php/getsavedrecipes.php',
+		data: 'json',
+		dataType:'json'
+	})
+
+
+	$.when(recipe)
+	.done(function (data) 
 	{
-		console.log(dishname);
-		console.log(sectionID);
-		var allergens = [];
-		$.ajax
-		({
-			url: 'localhost/wrp/json/savedrecipes.json',
-		    type:'GET',
-		    data: 'json',
-		    success:function(response)
-		    {
+		console.log(data)
+		//console.log(titleData[0][0], recipeData[0])
+		
+		$.each(data[0], function(i)
+		{
+			console.log(data[0])
+		})
+	})
 
-		    	$.each(response.recipes, function(index)
-		    	{
+}    
+
+
+function autoCompleteMenu(dishtype, sectionID)
+
+{
+	 
+	var itemType = dishtype;
+	var section = "#" + sectionID;		
+	$.ajax(
+	{
+
+	   url: 'http://localhost/wrp/json/recipetitles.json', 
+	  
+	    type: 'GET',
+	    dataType: 'json',
+	    success : function(response) 
+	    {
+	    	var items = [];
+	    	$.each(response.recipes, function(index)
+	    	{
+				
+				if(response.recipes[index].dishtype == itemType)
+				{
+					items.push(response.recipes[index].title);
+
+				}
+	    	})
+	    	var listlength = items.length;
+	    	do 
+	    	{
+	    		randomnumber = Math.floor((Math.random()*100) + 1);
+	    	}
+	    	while(randomnumber >= listlength);
+	    	console.log(section);
+	    	$(section).val(items[randomnumber]);
+
+	    	
+	    	
+	    },
+	    error : function (xhr, ajaxOptions, thrownError)
+	    {  
+	        console.log(xhr.status);          
+	        console.log(thrownError);
+
+	    } 
+	    
+	});
+
+}
+
+
+
+
+function getRecipeTitles(itemtype)
+{
+	 
+	var itemtype = itemtype;		
+	$.ajax(
+	{
+
+	    url: 'http://localhost/wrp/json/savedrecipes.json', 
+	    type: 'GET',
+	    dataType: 'json',
+	    success : function(response) 
+	    {
+	    	var txt = '';
+	    
+	    	$.each(response.recipes, function(index)
+	    	{
+
+	    		if(response.recipes[index].course[1] == itemtype)
+	    		{
+	    		//FILTER RESULTS BY DISHTYPE
+		    	txt += '<li><a href="#"><img src="img/'+ response.recipes[index].img +'" alt="recipe picture"><div class="dishlistitem '+ response.recipes[index].dishtype +'" id="'+ response.recipes[index].dishtype + index +'" class="itembtn">' + response.recipes[index].title.replace(/&amp;+/g,'&') + '</div></a></li>'; 
+		    	// alert(response.recipes[index].title);
+		    	
+			    }
+	
+	    	})
+
+	    	$('#results-list').html(txt);
+	    	
+	    },
+	    error : function (xhr, ajaxOptions, thrownError)
+	    {  
+	        console.log(xhr.status);          
+	        console.log(thrownError);
+
+	    } 
+	    
+	});
+}
+
+// function Ajax()
+// {
+
+// 	this.getRecipeTitles = function(itemtype)
+// 	{
+		 
+// 		var itemtype = itemtype;		
+// 		$.ajax(
+// 		{
+
+// 		    url: 'http://localhost/wrp/json/savedrecipes.json', 
+// 		    type: 'GET',
+// 		    dataType: 'json',
+// 		    success : function(response) 
+// 		    {
+// 		    	var txt = '';
+		    
+// 		    	$.each(response.recipes, function(index)
+// 		    	{
+
+// 		    		if(response.recipes[index].course[1] == itemtype)
+// 		    		{
+// 		    		//FILTER RESULTS BY DISHTYPE
+// 			    	txt += '<li><img src="img/'+ response.recipes[index].img +'" alt="recipe picture"><div class="dishlistitem '+ response.recipes[index].dishtype +'" id="'+ response.recipes[index].dishtype + index +'" class="itembtn">' + response.recipes[index].title.replace(/&amp;+/g,'&') + '</div></a></li>'; 
+// 			    	// alert(response.recipes[index].title);
+			    	
+// 				    }
+		
+// 		    	})
+
+// 		    	$('#resultslist').html(txt);
+		    	
+// 		    },
+// 		    error : function (xhr, ajaxOptions, thrownError)
+// 		    {  
+// 		        console.log(xhr.status);          
+// 		        console.log(thrownError);
+
+// 		    } 
+		    
+// 		});
+// 	}
+
+// 	this.getAllergens = function(dishname, sectionID) 
+// 	{
+// 		console.log(dishname);
+// 		console.log(sectionID);
+// 		var allergens = [];
+// 		$.ajax
+// 		({
+// 			url: 'localhost/wrp/json/savedrecipes.json',
+// 		    type:'GET',
+// 		    data: 'json',
+// 		    success:function(response)
+// 		    {
+
+// 		    	$.each(response.recipes, function(index)
+// 		    	{
 
 		    		
-		    		if(response.recipes[index]['title'] == dishname)
-		    		{
+// 		    		if(response.recipes[index]['title'] == dishname)
+// 		    		{
 		    			
-		    			$.each(response.recipes[index].ingredients, function(i)
-		    			{
-		    				allergen = response.recipes[index].ingredients[i].allergen;
+// 		    			$.each(response.recipes[index].ingredients, function(i)
+// 		    			{
+// 		    				allergen = response.recipes[index].ingredients[i].allergen;
 		  				
-							if(allergen !== false)
-							{	
-								//http://api.jquery.com/jquery.inarray/
-								if(($.inArray(allergen, allergens) == -1))
-								{
+// 							if(allergen !== false)
+// 							{	
+// 								//http://api.jquery.com/jquery.inarray/
+// 								if(($.inArray(allergen, allergens) == -1))
+// 								{
 
-								allergens.push(allergen);
+// 								allergens.push(allergen);
 
-								}
+// 								}
 
-							}
-		    			})
-		    			$(('#allergen-section-'+ sectionID)).html("Allergens:" + allergens.join());
+// 							}
+// 		    			})
+// 		    			$(('#allergen-section-'+ sectionID)).html("Allergens:" + allergens.join());
 	    				
-		    		}
-		    		else
-		    		{
-		    			console.log('FAIL')
-		    		}
+// 		    		}
+// 		    		else
+// 		    		{
+// 		    			console.log('FAIL')
+// 		    		}
 
-		    	})		    	
+// 		    	})		    	
 
-		    },
-		    error : function (xhr, ajaxOptions, thrownError)
-		    {  
-		        console.log(xhr.status);          
-		        console.log(thrownError);
+// 		    },
+// 		    error : function (xhr, ajaxOptions, thrownError)
+// 		    {  
+// 		        console.log(xhr.status);          
+// 		        console.log(thrownError);
 
-		    } 
+// 		    } 
 
-		})
-	}
+// 		})
+// 	}
 
-	// AJAX request to PHP file on server to POST menu to database
+// 	// AJAX request to PHP file on server to POST menu to database
 
-	this.postMenuString = function(menu) 
-	{
-		var data = JSON.stringify(menu);
+// 	this.postMenuString = function(menu) 
+// 	{
+// 		var data = JSON.stringify(menu);
 		
-		$.ajax
-		({
-			type:'POST',
-			url:'php/savemenu.php',
-			data: {dataString:data},
+// 		$.ajax
+// 		({
+// 			type:'POST',
+// 			url:'php/savemenu.php',
+// 			data: {dataString:data},
 
-			success:function(res)
-			{
-				alert('Menu saved to your profile!')
-				console.log("Success : Menu sent to server");
-			},
-			error: function()
-			{
-				alert('Sorry, the menu could not be saved,\ncheck you are logged in. ')
-				console.log("Fail: Menu not sent, check connection")
-			}
+// 			success:function(res)
+// 			{
+// 				alert('Menu saved to your profile!')
+// 				console.log("Success : Menu sent to server");
 
-		})
-	}
+// 			},
+// 			error: function()
+// 			{
+// 				alert('Sorry, the menu could not be saved,\ncheck you are logged in. ')
+// 				console.log("Fail: Menu not sent, check connection")
+// 			}
 
-	this.getMenuString = function() // Access the database to find matching records for saved menus
-	{
+// 		})
+// 	}
 
-		$.ajax
-		({
+// 	this.getMenuString = function() // Access the database to find matching records for saved menus
+// 	{
+
+// 		$.ajax
+// 		({
 			
-			type:'GET',
-			url: 'php/getsavedmenus.php',
-			data: 'json',        
-			success:function(response)
-			{
+// 			type:'GET',
+// 			url: 'php/getsavedmenus.php',
+// 			data: 'json',        
+// 			success:function(response)
+// 			{
 				
 				
-				var txt = "";
-				var menu = $.parseJSON(response);
+// 				var txt = "";
+// 				var menu = $.parseJSON(response);
 
-				for (var i = 0; i < menu.length; i++) {
+// 				for (var i = 0; i < menu.length; i++) {
 					
-					if (menu[i].display_day)
-					txt += '<button id="'+ menu[i].id + '" class="itembtn usermenu">' + "Menu Display Date: " + menu[i].display_date + ',' + menu[i].status + '</button>';
-				};
-				//console.log(menu[0].display_date);
-				//storeLocal("menu", response); // Add the item to local storage for future access
+// 					if (menu[i].display_day)
+// 					txt += '<button id="'+ menu[i].id + '" class="itembtn usermenu">' + "Menu Display Date: " + menu[i].display_date + ',' + menu[i].status + '</button>';
+// 				};
+// 				//console.log(menu[0].display_date);
+// 				//storeLocal("menu", response); // Add the item to local storage for future access
 
-				//console.log('PASS');
+// 				//console.log('PASS');
 				
-				$('#resultslist').html("<div id='usermenu'>"+txt+"</div>"); // Add the results to the results list			
-			},
-			error:function(response)
-			{
-				response + '</br>' + console.log('FAIL');
-			}
-		})
+// 				$('#resultslist').html("<div id='usermenu'>"+txt+"</div>"); // Add the results to the results list			
+// 			},
+// 			error:function(response)
+// 			{
+// 				response + '</br>' + console.log('FAIL');
+// 			}
+// 		})
 
-	}
-	this.getUserMenu = function(id) //Takes the ID of the selected menu as a parameter
-	{
+// 	}
+// 	this.getUserMenu = function(id) //Takes the ID of the selected menu as a parameter
+// 	{
 
-		$.ajax
-		({
+// 		$.ajax
+// 		({
 			
-			type:'GET',
-			url: 'php/getusermenu.php', // Gets the menu data in string format
-			data: {dataString:id},      
-			success:function(response)
-			{
-				var result = JSON.parse(response); 
+// 			type:'GET',
+// 			url: 'php/getusermenu.php', // Gets the menu data in string format
+// 			data: {dataString:id},      
+// 			success:function(response)
+// 			{
+// 				var result = JSON.parse(response); 
 				
-				for (var i = 0; i < result.items.length; i++) {
+// 				for (var i = 0; i < result.items.length; i++) {
 					
-					var day = result.day;
+// 					var day = result.day;
 					
-					$('.menuday').val(day);
-					var date = result.date;
+// 					$('.menuday').val(day);
+// 					var date = result.date;
 					
-					$('.menudate').val(date);
+// 					$('.menudate').val(date);
 
-					var section = "#" + result.items[i].dishtype;
-					var title = result.items[i].itemtitle;
+// 					var section = "#" + result.items[i].dishtype;
+// 					var title = result.items[i].itemtitle;
 					
-					$(section).val(title);
-				};
+// 					$(section).val(title);
+// 				};
 							
-			},
-			error:function(response)
-			{
-				response + '</br>' + console.log('FAIL');
-			}
-		})
-	}
-	this.getUserRecipes = function()
-	{
+// 			},
+// 			error:function(response)
+// 			{
+// 				response + '</br>' + console.log('FAIL');
+// 			}
+// 		})
+// 	}
+// 	this.getSavedRecipes = function()
+// 	{
 
-		var txt ="";
+// 		var txt ="";
 
-		$.ajax
-		({
+// 		$.ajax
+// 		({
 			
-			type:'GET',
-			url: 'php/getuserrecipes.php',
-			data: '$userrecipe',        
-			success:function(response)
-			{
+// 			type:'GET',
+// 			url: 'php/getsavedrecipes.php',
+// 			data: '$userrecipe',        
+// 			success:function(response)
+// 			{
 
 				
-				var result = JSON.parse(response);
+// 				var result = JSON.parse(response);
 				
-				$.each(result, function(index)
-				{
-					txt += "<button class='dishlistitem'>" + result[index].recipe + "</button>";
+// 				$.each(result, function(index)
+// 				{
+// 					txt += "<button class='dishlistitem'>" + result[index].recipe + "</button>";
 
-				})
-				$('#resultslist').html(txt);
+// 				})
+// 				$('#resultslist').html(txt);
 
 							
-			},
-			error:function(response)
-			{
-				response + '</br>' + console.log('FAIL');
-			}
-		})
+// 			},
+// 			error:function(response)
+// 			{
+// 				response + '</br>' + console.log('FAIL');
+// 			}
+// 		})
 
-	}
-	this.getRecipe = function(title)
+// 	}
+// 	this.getRecipe = function(title)
 
-	{
-		var recipe = new Recipe(); // Create new instance of recipe	
-		var allergens = []; // Empty array to store allergen list	
-		$.ajax(
-		{
+// 	{
+// 		var recipe = new Recipe(); // Create new instance of recipe	
+// 		var allergens = []; // Empty array to store allergen list	
+// 		$.ajax(
+// 		{
 			
 
-		    url: 'http://localhost/wrp/json/savedrecipes.json', 
-		    type: 'GET',
-		    dataType: 'json',
-		    success : function(response) 
-		    {
+// 		    url: 'http://localhost/wrp/json/savedrecipes.json', 
+// 		    type: 'GET',
+// 		    dataType: 'json',
+// 		    success : function(response) 
+// 		    {
 		    
-		    	$.each(response.recipes, function(index)
-		    	{
+// 		    	$.each(response.recipes, function(index)
+// 		    	{
 
 
-		    		if(response.recipes[index].title == title)
-		    		{
-		    			// Assign recipe details
-		    			recipe.setTitle(response.recipes[index].title);
-		    			recipe.setDescription(response.recipes[index].description);
-		    			recipe.setImg(response.recipes[index].img);
-		    			recipe.setPrepTime(response.recipes[index].prep);
-		    			recipe.setCookingTime(response.recipes[index].cook);
-		    			recipe.setDifficulty(response.recipes[index].difficulty);
-		    			recipe.setServes(response.recipes[index].serves);
-		    			recipe.setIngredients(response.recipes[index].ingredients);
-		    			recipe.setIngredients(response.recipes[index].ingredients);
-		    			recipe.setMethod(response.recipes[index].method);
-						recipe.setNutrition(response.recipes[index]["nutrition: per serving"]);
+// 		    		if(response.recipes[index].title == title)
+// 		    		{
+// 		    			// Assign recipe details
+// 		    			recipe.setTitle(response.recipes[index].title);
+// 		    			recipe.setDescription(response.recipes[index].description);
+// 		    			recipe.setImg(response.recipes[index].img);
+// 		    			recipe.setPrepTime(response.recipes[index].prep);
+// 		    			recipe.setCookingTime(response.recipes[index].cook);
+// 		    			recipe.setDifficulty(response.recipes[index].difficulty);
+// 		    			recipe.setServes(response.recipes[index].serves);
+// 		    			recipe.setIngredients(response.recipes[index].ingredients);
+// 		    			recipe.setIngredients(response.recipes[index].ingredients);
+// 		    			recipe.setMethod(response.recipes[index].method);
+// 						recipe.setNutrition(response.recipes[index]["nutrition: per serving"]);
 
 						
-		    			$.each(response.recipes[index].ingredients, function(i)
-		    			{
-		    				allergen = response.recipes[index].ingredients[i].allergen;
+// 		    			$.each(response.recipes[index].ingredients, function(i)
+// 		    			{
+// 		    				allergen = response.recipes[index].ingredients[i].allergen;
 		    				    				
-							if(allergen !== false) // if the allergen has anything but a false value, put that value (i.e. the name of the allergen) in an array
-							{	
-								//http://api.jquery.com/jquery.inarray/
-								if(($.inArray(allergen, allergens) == -1))
-								{
+// 							if(allergen !== false) // if the allergen has anything but a false value, put that value (i.e. the name of the allergen) in an array
+// 							{	
+// 								//http://api.jquery.com/jquery.inarray/
+// 								if(($.inArray(allergen, allergens) == -1))
+// 								{
 
-								allergens.push(allergen);
+// 								allergens.push(allergen);
 
-								}
+// 								}
 
-							}
-		    			})
-		    			recipe.setAllergens(allergens);
+// 							}
+// 		    			})
+// 		    			recipe.setAllergens(allergens);
 		    			
 
-		    			$('.recipe-heading').html(recipe.dishtitle)
-		    			$('#description').html(recipe.description);
-		    			$('#image').html('<img class="headerimage" alt="recipe image" src=img/' + recipe.getImg() + '>');
-		    			$('#prep-mins').html(recipe.getPrepTime());
-		    			$('#cooking-mins').html(recipe.getCookingTime());
-		    			$('#difficulty-level').html(recipe.getDifficulty());
-		    			$('#serves').html(recipe.getServes());
-		    			$('#allergen-list').html(recipe.getAllergens().join());
-		    			// Set nutrition values to recipe template
-		    			var nutrition_list = recipe.getNutrition();
-		    			$('.energy').html(nutrition_list.energy);
-		    			$('.fat').html(nutrition_list.fat);
-		    			$('.saturates').html(nutrition_list.saturates);
-		    			$('.carbs').html(nutrition_list.carbs);
-		    			$('.sugars').html(nutrition_list.sugars);
-		    			$('.fibre').html(nutrition_list.fibre);
-		    			$('.protein').html(nutrition_list.protein);
-		    			$('.salt').html(nutrition_list.salt);
-		    			// Set ingredients to recipe template
-		    			var ingredients_txt = "";
-		    			var ingredients = recipe.getIngredients();
-		    			for (var i = 0; i < ingredients.length; i++) 
-		    			{
-		    				ingredients_txt += "<li>" + ingredients[i].measure+ingredients[i].unit + " " + ingredients[i].name +"</li>";
-		    			};
-		    			$('#ingredients-list').html(ingredients_txt);
+// 		    			$('.recipe-heading').html(recipe.dishtitle)
+// 		    			$('#description').html(recipe.description);
+// 		    			$('#image').html('<img class="headerimage" alt="recipe image" src=img/' + recipe.getImg() + '>');
+// 		    			$('#prep-mins').html(recipe.getPrepTime());
+// 		    			$('#cooking-mins').html(recipe.getCookingTime());
+// 		    			$('#difficulty-level').html(recipe.getDifficulty());
+// 		    			$('#serves').html(recipe.getServes());
+// 		    			$('#allergen-list').html(recipe.getAllergens().join());
+// 		    			// Set nutrition values to recipe template
+// 		    			var nutrition_list = recipe.getNutrition();
+// 		    			$('.energy').html(nutrition_list.energy);
+// 		    			$('.fat').html(nutrition_list.fat);
+// 		    			$('.saturates').html(nutrition_list.saturates);
+// 		    			$('.carbs').html(nutrition_list.carbs);
+// 		    			$('.sugars').html(nutrition_list.sugars);
+// 		    			$('.fibre').html(nutrition_list.fibre);
+// 		    			$('.protein').html(nutrition_list.protein);
+// 		    			$('.salt').html(nutrition_list.salt);
+// 		    			// Set ingredients to recipe template
+// 		    			var ingredients_txt = "";
+// 		    			var ingredients = recipe.getIngredients();
+// 		    			for (var i = 0; i < ingredients.length; i++) 
+// 		    			{
+// 		    				ingredients_txt += "<li>" + ingredients[i].measure+ingredients[i].unit + " " + ingredients[i].name +"</li>";
+// 		    			};
+// 		    			$('#ingredients-list').html(ingredients_txt);
 
 
 
 
-		    			var method_txt = "";
-		    			var method = recipe.getMethod();
-	//http://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object	 
-		    			for (var key in method) 
-		    			{
-		    				method_txt += "<li>"+ method[key] + "</li>";
-		    			};
-		    			$('#method-list').html(method_txt);
+// 		    			var method_txt = "";
+// 		    			var method = recipe.getMethod();
+// 	//http://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object	 
+// 		    			for (var key in method) 
+// 		    			{
+// 		    				method_txt += "<li>"+ method[key] + "</li>";
+// 		    			};
+// 		    			$('#method-list').html(method_txt);
 		    			
 			    	
-				    }
+// 				    }
 		
-		    	})
+// 		    	})
 		    	
-		    },
-		    error : function (xhr, ajaxOptions, thrownError)
-		    {  
-		        console.log(xhr.status);          
-		        console.log(thrownError);
+// 		    },
+// 		    error : function (xhr, ajaxOptions, thrownError)
+// 		    {  
+// 		        console.log(xhr.status);          
+// 		        console.log(thrownError);
 
-		    } 
+// 		    } 
 		    
-		});
+// 		});
 
-	}
-	this.getRecipeList = function(option)
-	{
+// 	}
+// 	this.getRecipeList = function(option)
+// 	{
 		 	
-		$.ajax(
-		{
+// 		$.ajax(
+// 		{
 
-		    url: 'http://localhost/wrp/json/savedrecipes.json', 
-		    type: 'GET',
-		    dataType: 'json',
-		    success : function(response) 
-		    {
-		    	var txt = '';
+// 		    url: 'http://localhost/wrp/json/savedrecipes.json', 
+// 		    type: 'GET',
+// 		    dataType: 'json',
+// 		    success : function(response) 
+// 		    {
+// 		    	var txt = '';
 		    
-		    	$.each(response.recipes, function(index)
-		    	{
+// 		    	$.each(response.recipes, function(index)
+// 		    	{
 
-		    		if(response.recipes[index].course[1] == option)
-		    		{
-		    			console.log(response.recipes[index].course[1] == option)
-		    		//FILTER RESULTS BY DISHTYPE
-			    	txt += '<option class="recipelistitem '+ response.recipes[index].course[0] +'" id="'+ response.recipes[index].title.split(' ').join('+') +'" class="itembtn">' + response.recipes[index].title.replace(/&amp;+/g,'&') + '</option>'; 
-			    	// alert(response.recipes[index].title);
+// 		    		if(response.recipes[index].course[1] == option)
+// 		    		{
+// 		    			console.log(response.recipes[index].course[1] == option)
+// 		    		//FILTER RESULTS BY DISHTYPE
+// 			    	txt += '<option class="recipelistitem '+ response.recipes[index].course[0] +'" id="'+ response.recipes[index].title.split(' ').join('+') +'" class="itembtn">' + response.recipes[index].title.replace(/&amp;+/g,'&') + '</option>'; 
+// 			    	// alert(response.recipes[index].title);
 			    	
-				    }
+// 				    }
 		
-		    	})
+// 		    	})
 
-		    	$('#recipelist').html(txt);
+// 		    	$('#recipelist').html(txt);
 		    	
-		    },
-		    error : function (xhr, ajaxOptions, thrownError)
-		    {  
-		        console.log(xhr.status);          
-		        console.log(thrownError);
+// 		    },
+// 		    error : function (xhr, ajaxOptions, thrownError)
+// 		    {  
+// 		        console.log(xhr.status);          
+// 		        console.log(thrownError);
 
-		    } 
+// 		    } 
 		    
-		});
+// 		});
 
-	}
-	this.saveRecipeToDB = function(title)
-	{
-		var data = title;
-		console.log(data);
+// 	}
+// 	this.saveRecipeToDB = function(title)
+// 	{
+// 		var data = title;
+// 		console.log(data);
 		
-		$.ajax({
+// 		$.ajax({
 
-			url: 'php/savetofavourites.php',
-		    type: 'POST',
-		    data: {datastring:data},
-		    success : function(response) 
-		    {
-		    	console.log('success')
-		    },
-		    error : function (xhr, ajaxOptions, thrownError)
-		    {  
-		        console.log(xhr.status);          
-		        console.log(thrownError);
+// 			url: 'php/savetofavourites.php',
+// 		    type: 'POST',
+// 		    data: {datastring:data},
+// 		    success : function(response) 
+// 		    {
+// 		    	console.log(response)
+// 		    },
+// 		    error : function (xhr, ajaxOptions, thrownError)
+// 		    {  
+// 		        console.log(xhr.status);          
+// 		        console.log(thrownError);
 
-		    } 
-		})
-	}
-	this.autoCompleteMenu = function(dishtype, sectionID)
+// 		    } 
+// 		})
+// 	}
+// 	this.autoCompleteMenu = function(dishtype, sectionID)
 
-	{
+// 	{
 		 
-		var itemType = dishtype;
-		var section = "#" + sectionID;		
-		$.ajax(
-		{
+// 		var itemType = dishtype;
+// 		var section = "#" + sectionID;		
+// 		$.ajax(
+// 		{
 
-		   url: 'http://localhost/wrp/json/recipetitles.json', 
+// 		   url: 'http://localhost/wrp/json/recipetitles.json', 
 		  
-		    type: 'GET',
-		    dataType: 'json',
-		    success : function(response) 
-		    {
-		    	var items = [];
-		    	$.each(response.recipes, function(index)
-		    	{
+// 		    type: 'GET',
+// 		    dataType: 'json',
+// 		    success : function(response) 
+// 		    {
+// 		    	var items = [];
+// 		    	$.each(response.recipes, function(index)
+// 		    	{
 					
-					if(response.recipes[index].dishtype == itemType)
-					{
-						items.push(response.recipes[index].title);
+// 					if(response.recipes[index].dishtype == itemType)
+// 					{
+// 						items.push(response.recipes[index].title);
 
-					}
-		    	})
-		    	var listlength = items.length;
-		    	do 
-		    	{
-		    		randomnumber = Math.floor((Math.random()*100) + 1);
-		    	}
-		    	while(randomnumber >= listlength);
-		    	console.log(section);
-		    	$(section).val(items[randomnumber]);
+// 					}
+// 		    	})
+// 		    	var listlength = items.length;
+// 		    	do 
+// 		    	{
+// 		    		randomnumber = Math.floor((Math.random()*100) + 1);
+// 		    	}
+// 		    	while(randomnumber >= listlength);
+// 		    	console.log(section);
+// 		    	$(section).val(items[randomnumber]);
 
 		    	
 		    	
-		    },
-		    error : function (xhr, ajaxOptions, thrownError)
-		    {  
-		        console.log(xhr.status);          
-		        console.log(thrownError);
+// 		    },
+// 		    error : function (xhr, ajaxOptions, thrownError)
+// 		    {  
+// 		        console.log(xhr.status);          
+// 		        console.log(thrownError);
 
-		    } 
+// 		    } 
 		    
-		});
+// 		});
 
-	}
+// 	}
 	
 
 
-}//ajax
+// }//ajax

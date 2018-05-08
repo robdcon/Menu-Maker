@@ -8,40 +8,36 @@
 
 			<div class="row">
 
-				
+				<div id="menucontrols" class="sidebar" tabindex="0">
 
-					<div id="menucontrols" tabindex="0">
+					<div id="control-nav">
 
-						<div id="control-nav">
-
-							<div class="menu-btn-container">
-								<button class="menu-btn" id="createmenu"><span class="glyphicon glyphicon-plus"></span>Create New Menu</button>
-								<div class="hide tooltip-container"><div class="tooltip">Create or Refresh menu</div></div>
-							</div>
-							<div class="menu-btn-container">
-								<button class="menu-btn" id="getusermenus"><span class="glyphicon glyphicon-eye-open"></span>View Saved Menus</button>
-								<div class="hide  tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
-							</div>
-							<div class="menu-btn-container">
-								<button class="menu-btn" id="getuserrecipes"><span class="glyphicon glyphicon-eye-open"></span>View Saved Recipes</button>
-								<div class="hide tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
-							</div>
-							<div class="menu-btn-container">
-								<button class="menu-btn" id="genmenu"><span id="tooltip" class="glyphicon glyphicon-info-sign"></span>AutoCreate Menu</button>
-								<div class="hide tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
-							</div>
-							<div class="menu-btn-container">
-								<button class="menu-btn" id="getrecipes"><span class="glyphicon glyphicon-search"></span>Search Recipes</button>
-								<div class="hide tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
-							</div>
-							
-						</div>					
+						<div class="menu-btn-container">
+							<button class="menu-btn" id="createmenu"><span class="glyphicon glyphicon-plus"></span>Create New Menu</button>
+							<div class="hide tooltip-container"><div class="tooltip">Create or Refresh menu</div></div>
+						</div>
+						<div class="menu-btn-container">
+							<button class="menu-btn" id="getusermenus"><span class="glyphicon glyphicon-eye-open"></span>View Saved Menus</button>
+							<div class="hide  tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
+						</div>
+						<div class="menu-btn-container">
+							<button class="menu-btn" id="getuserrecipes"><span class="glyphicon glyphicon-eye-open"></span>View Saved Recipes</button>
+							<div class="hide tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
+						</div>
+						<div class="menu-btn-container">
+							<button class="menu-btn" id="genmenu"><span id="tooltip" class="glyphicon glyphicon-info-sign"></span>AutoCreate Menu</button>
+							<div class="hide tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
+						</div>
+						<div class="menu-btn-container">
+							<button class="menu-btn" id="getrecipes"><span class="glyphicon glyphicon-search"></span>Search Recipes</button>
+							<div class="hide tooltip-container"><div class="tooltip">Click to generate a random menu from the data base, then just set the day and date.</div></div>
+						</div>
 						
-					</div>	
+					</div>					
+					
+				</div>							
 
-							
-
-				<section id="menu-container" tabindex="0">
+				<div id="menu-template-container" tabindex="1">
 
 					<div class="btn-container">
 
@@ -50,15 +46,15 @@
 
 					</div>
 
-					<div id="menudisplay" tabindex="0">
+					<div id="menu-display" tabindex="0">
 														
 					</div>
 
-				</section>				
+				</div>				
 
-				<div id="listcontainer" tabindex="0">
+				<div id="list-container" tabindex="2">
 
-					<ul id="resultslist">
+					<ul id="results-list">
 
 					</ul>
 

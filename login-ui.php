@@ -1,8 +1,7 @@
-<?php session_start()?> 
+<?php session_start();
 
-<?php include("header.php"); 
-ini_set('display_errors',true);
-error_reporting(E_ALL);
+include("header.php"); 
+
 ?>
 
 	<!--login form-->
@@ -31,11 +30,11 @@ error_reporting(E_ALL);
 	
 				<?php
 	
-					if (isset($_SESSION['message'])) // If an error message has been set, print it to the console
+					if (isset($_SESSION['login-status'])) // If an error message has been set, print it to the console
 					{
 						
-						echo "<span class='error'>".$_SESSION['message']."</span>";
-						unset($_SESSION['message']); // Unset the message variable so it can be used on another try
+						echo "<span class='error'>".$_SESSION['login-status']."</span>";
+						//unset($_SESSION['login-status']); // Unset the session variable so it can be used on another try
 					}
 	
 				?>
@@ -44,7 +43,7 @@ error_reporting(E_ALL);
 	
 			<button id="submitdetails" type="submit">Log in</button> <!-- Submit user input -->
 			<div><a href="php/logout.php">Switch user</a></div> <!-- Script to end current session -->
-			<div><a href="reminder.php"></a>Forgotten password?</div> <!-- Send a password reminder to the user --> 
+			<div><a href="psw-reminder.php"></a>Forgotten password?</div> <!-- Send a password reminder to the user --> 
 	
 		</form></div>
 

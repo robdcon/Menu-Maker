@@ -3,9 +3,6 @@
 //Start session
 session_start();
 
-ini_set('display_errors',true);
-error_reporting(E_ALL);
-
 // Database creation details are in query folder
 
 // Include test connection function
@@ -34,17 +31,9 @@ $stmnt->execute();
 
 $row = $stmnt->fetch();
 
-
-//Create variable to store result of query
-//$result = $conn->query($sql);
-
-//Create variable to count results
-//$count = mysqli_num_rows($result);
-
-
-if(!$row/*$row=mysqli_fetch_assoc($result)*/) // If no rows are found that match the criteria, set the appropriate error msg
+if(!$row) // If no rows are found that match the criteria, set the appropriate error msg
 {
-	$_SESSION['message'] = "Your username or password is incorrect";
+	$_SESSION['login-status'] = "Your username or password is incorrect";
 	
 	header("Location: ../login-ui.php"); // Refresh the login page
 }
@@ -53,7 +42,7 @@ else // If the matching row is found, set a username and current state message f
 		
 	$_SESSION['username'] = $row['user_username'];
 	$_SESSION['user_id'] = $row['user_id'];
-	$_SESSION['message'] = "Logged in as ".$_SESSION['username'];
+	$_SESSION['login-status'] = "Logged in as ".$_SESSION['username'];
 	
 	header("Location: ../index.php"); // Direct to main page as a logged in user
 

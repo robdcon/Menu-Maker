@@ -2,36 +2,28 @@
 function bind()
 {
 	// Load blank menu to the DOM/Start new menu
-	$('#createmenu').click(function(event)
+	$('#createmenu').click(function()
 	{		
 		
-		var ui = "#menudisplay"	
+		var ui = "#menu-display"	
 
-		var temp1 = new Template();
-		temp1.displayTemplate(ui);
-		temp1.addSectionData();
-		temp1.addSectionListeners();
+		displayTemplate(ui)
+		addSectionData()
+		addSectionListeners()
 
-		event.preventDefault();
 		
 	});
 
-	$('#resultslist').click(getDishTitle);
+	$('#results-list').click(getDishTitle);
 	
-	$('#resultslist').click(getUserMenuID);
+	$('#results-list').click(getUserMenuID);
 
 	// Auto create menu based on input data attributes & random number generator	
-	$('#genmenu').click(function()
-	{
-		generateMenu();
-	})
+	$('#genmenu').click(generateMenu)
 	
 	// Save current menu by calling the saveUserMenu method of the menu class
-	$('#savemenu').click(function()
-	{
-		var menu1 = new Menu();
-		menu1.saveUserMenu();
-	});
+	$('#savemenu').click(function(){ saveUserMenu() })
+	
 
 	//Print the contents of the current menu using the window.print method
 	$('#printmenu').click(function()
@@ -39,28 +31,30 @@ function bind()
 		print();
 	});
 
-	//
 	$('#getusermenus').click(function()
-	{
+	{	
 		
-		var ajax = new Ajax();
-		ajax.getMenuString();
+		$.getScript('js/ajax.js',function(){ getMenuString() });
 	});
+
+	$('#saverecipe').click(function()
+	{
+		saveRecipe();
+	})
 
 	$('#getuserrecipes').click(function()
 	{
-		var ajax = new Ajax();
-		ajax.getUserRecipes();
+		$.getScript('js/ajax.js', function(){ getUserRecipes() });
 	});
 	
-	$('getrecipes').click(function()
-	{
-		$.get('recipecard.php #recipe-wrapper', function(data)
-		{
-			$('#menudisplay').html(data);
-		} )
-	}
-	)
+	// $('getrecipes').click(function()
+	// {
+	// 	$.get('recipecard.php #recipe-wrapper', function(data)
+	// 	{
+	// 		$('#menu-display').html(data);
+	// 	} )
+	// }
+	//)
 	
 
 }

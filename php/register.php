@@ -1,14 +1,8 @@
 <?php
 session_start();
 
-ini_set('display_errors',true);
-error_reporting(E_ALL);
-
-
-
 // Database creation details are in query folder
 
-// Include test connection function
 include 'config.php';
 
 // Variables for POST data from login.php
@@ -18,22 +12,19 @@ $first = (isset($_POST['first']) ? $_POST['first'] : null);
 $last = (isset($_POST['last']) ? $_POST['last'] : null);
 $email = (isset($_POST['email']) ? $_POST['email'] : null);
 
-
+// Prepare statement with username placeholder
 $regStmnt = $pdo->prepare("SELECT * FROM users WHERE user_username = :username");
 
+// Bind a value to the placeholder 
 $regStmnt->bindValue('username', $usr);
 
+// Execute query with prepared statement
 $regStmnt->execute();
 
-//$regStmnt->fetch();
-
+// Get returned row count
 $count = $regStmnt->rowCount();
 
-//$checkresult = $conn->query($sqlcheck); // Store the result of the query
-
-//$checkcount = mysqli_num_rows($checkresult); // Count the amount of returned rows
-
-if ($count > 0/*$checkcount > 0*/) // If any matching rows exist the username is taken
+if ($count > 0) // If any matching rows exist the username is taken
 { 
 	$_SESSION['reg_msg'] = "This username is already taken"; // Set the error message
 	header("Location: ../register-ui.php");	// Refresh the page
@@ -41,17 +32,22 @@ if ($count > 0/*$checkcount > 0*/) // If any matching rows exist the username is
 else // Otherwise, continue to upload the details...
 {
 
+	// Create an encrypted version of the users password
+	$hashed_psw = password_hash($psw, PASSWORD_DEFAULT);
+
+	// Create verification code to be stored in temp_user & be sent to the users email for verification
+	$verification_code = password_hash(rand(0, 1000), PASSWORD_DEFAULT);
+
 	//Enter values into the appropriate table in mysql
 
-	//$result = $conn->query($sql);
-	$query = $pdo->prepare("INSERT INTO users (user_username, user_fname, user_lname, user_email, user_password) 
-	VALUES (:username,:fname, :lname, :email, :password)");
+	$query = $pdo->prepare("INSERT INTO temp_user (temp_user, temp_fname, temp_lname, temp_email, temp_password, temp_verify) 
+	VALUES (:username, :fname, :lname, :email, :password, :verify)");
 
-	$query->execute(['username'=>$usr, 'fname'=>$first, 'lname'=>$last, 'email'=>$email, 'password'=>$psw]);
+	$query->execute(['username'=>$usr, 'fname'=>$first, 'lname'=>$last, 'email'=>$email, 'password'=>$hashed_psw, 'verify'=>$verification_code]);
 
 	$result=$query->fetch();
 
-	if($query->execute() /*$result = $conn->query($sql)*/) // If the query attemp returns true, direct to login screen to login
+	if($query) // If the query attemp returns true, direct to login screen to login
 	{
 		header("Location: ../login-ui.php");
 	}

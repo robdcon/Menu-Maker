@@ -1,8 +1,8 @@
 <?php
 
 // Set PDO parameters for database connection (Currently experiencing a problem so have fallen back to original connection type instead of PDO for now)
-ini_set('display_errors',true);
-error_reporting(E_ALL);
+// ini_set('display_errors',true);
+// error_reporting(E_ALL);
 
 $username = 'root';
 $database = 'menucreator';

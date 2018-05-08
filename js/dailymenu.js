@@ -4,50 +4,54 @@
 
 function DailyMenu(day, date, array)
 {
+	var menu = {}
+
 	//Create a new instance of DayDate and access its methods to get a sql friendly date format
 	var newdate = new DayDate();
 
 
-	this.datecreated = newdate.getMysqlFormat();
-	this.date = date; // The intended date for the menu to be displayed
-	this.day = day; // The day of the week the menu should be displayed
-	this.items = array; // The UserMenuItems 
+	menu.datecreated = newdate.getMysqlFormat();
+	menu.date = date; // The intended date for the menu to be displayed
+	menu.day = day; // The day of the week the menu should be displayed
+	menu.items = array; // The UserMenuItems 
+
+	return menu;
 
 	// Set day name
 	this.setDay = function(dayname)
 	{
-		this.day = dayname
+		menu.day = dayname
 	}
 	// Get day name
 	this.getDay = function()
 	{
-		return this.day;
+		return menu.day;
 	}
 	// Set date name
 	this.setDate = function(datestring)
 	{
-		this.date = datestring;
+		menu.date = datestring;
 	}
 	// Get date name
 	this.getDate = function()
 	{
-		return this.date;
+		return menu.date;
 	}
 	// Set dish items
 	this.setDishes = function(dishlist)
 	{
-		this.dishes = dishlist;
+		menu.dishes = dishlist;
 	}
 	// Get dish items
 	this.getDishes = function()
 	{
-		return this.dishes
+		return menu.dishes
 	}
 
 	// Get date created
 	this.getDateCreated = function()
 	{
-		return this.datecreated;
+		return menu.datecreated;
 	}
 	this.setDateCreated = function()
 	{

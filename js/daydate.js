@@ -2,7 +2,7 @@
 
 function DayDate(date) 
 {
-	var dateobj = date || new Date() ;
+	var dateobj = date || new Date() ; // Can be called without a parameter to use on current date
 	var sec = dateobj.getSeconds();
 	var min = dateobj.getMinutes();
 	var hour = dateobj.getHours();

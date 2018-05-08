@@ -78,29 +78,35 @@
 		      </button>
 		      <a class="navbar-brand" href="#">MenuCreator</a>
 		    </div>
+
 		     <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav">
+
 		        <li class="active"><a href="#">Home</a></li>
 		        <li><a href="recipecard.php">Recipes</a></li>
 		        <li><a href="index.php">Menu</a></li>
+
 		      </ul>
+
 		      <ul class="nav navbar-nav navbar-right">
+
 		      	<?php
-						if(isset($_SESSION['username'])) 
-						{
-							$username = ($_SESSION['username']);
-							echo "<li><a  class='login' tabindex='0'>&nbsp;<span class='glyphicon glyphicon-user'></span>&nbsp;$username</a></li>";
-							echo "<li><a href='php/logout.php' id='logout' class='logout' tabindex='0'>logout</a></li>";
-							
-						}
-						else 
-						{
-							echo '<li><a href="register-ui.php"><span class="glyphicon glyphicon-user"></span> Register</a></li>';
-		        			echo '<li><a href="login-ui.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
-							echo '<li><a href="login-ui.php"><span>You are not logged in</span></a></li>';
-							
-						}
-					?>
+		      	
+					if(isset($_SESSION['username'])) 
+					{
+						$username = ($_SESSION['username']);
+						echo "<li><a  class='login' tabindex='0'>&nbsp;<span class='glyphicon glyphicon-user'></span>&nbsp;$username</a></li>";
+						echo "<li><a href='php/logout.php' id='logout' class='logout' tabindex='0'>logout</a></li>";
+						
+					}
+					else 
+					{
+						echo '<li><a href="register-ui.php"><span class="glyphicon glyphicon-user"></span> Register</a></li>';
+	        			echo '<li><a href="login-ui.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+						echo '<li><a href="login-ui.php"><span>You are not logged in</span></a></li>';
+						
+					}
+				?>
 		        
 		      </ul>
 		    </div>

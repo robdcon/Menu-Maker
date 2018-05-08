@@ -37,7 +37,7 @@ function addDataToTemplate()
 			
 			var dayString = dayDate.getDayText()
 
-			$('#dayname').html(dayString)
+			$('.menuday').html(dayString)
 		})
 	
 	  $('form').find('input.menusection').each(function(ev)
@@ -48,13 +48,6 @@ function addDataToTemplate()
 		  }
 	  });
 	
-	// TEST
-	// $.each($('.menuitem'), function()
-	// {
-	// 	console.log($(this).data('dishtype'))
-	// })
-	// console.log($('#main-1').data('dishtype'));
-	
 }
 function addListenersToSections()
 {
@@ -64,8 +57,7 @@ function addListenersToSections()
 		dishtype = $(this).data('dishtype');
 		console.log(dishtype)
 		//New instance of the utility class to access methods
-		var ajax11 = new Ajax()
-		ajax11.getRecipeTitles(dishtype);
+		$.getScript('js/ajax.js', function(){ getRecipeTitles(dishtype) });
 
 		$(this).on('click keypress', function() // Attach events to invoke a function to shift focus to results area while marking the menu section as active 
 		{
@@ -75,7 +67,7 @@ function addListenersToSections()
 			})
 			$(this).data({'active':'true'}); // Add the data to mark as active
 			 
-			$('#listcontainer ul').focus(); // Shift focus to results area (for accessibilty purposes)
+			$('#list-container ul').focus(); // Shift focus to results area (for accessibilty purposes)
 		})
 		
 	})

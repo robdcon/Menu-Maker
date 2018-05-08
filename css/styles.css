@@ -38,18 +38,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-div.navbar-header a.navbar-brand
-{
-	color:#fff;
-}
-#myNavbar ul.nav.navbar-nav li a
-{
-	color:#fff;
-}
-a.skiplink
-{
-	margin: 0 1em 0 1em;
-}
+
 
 blockquote, q {
 	quotes: none;
@@ -65,6 +54,8 @@ table {
 }
 label, button, input[type="submit"]{cursor:pointer;} 
 input[type="text"]{cursor:pointer;}
+
+
 
 /*MENU TEMPLATE STYLES*/
 
@@ -180,20 +171,21 @@ body
 }
 
 /*MENU TEMPLATE UI SECTION*/
-section#menu-container
+#menu-template-container
 {
 	width: 50%;
 	display: inline-block;
 }
 
-#menucontainer
+#menu-container
 {
 	width: 100%;
+	height: auto;
 	display: inline-block;
 	text-align: center;
-	color:#000;
 }
-#menudisplay
+
+#menu-display
 {
 	display: inline-block;
 	max-width: 100%;
@@ -267,26 +259,36 @@ input.price
 
 /*RESULTS LIST UI SECTION*/
 
-#listcontainer
+#list-container
 {
-	width: 30%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
 	height: 100%;
 	background-color: #28245f;
 	display: inline-block;
 	float: right;
 }
-#listcontainer:focus
+
+#list-container:focus
 {
 	box-shadow:0px 0px 10px #fff;
 }
-
-#listcontainer li
+ul#results-list
 {
-	max-width: 100%;
+	width: 90%;
+	margin-top: 0 auto;
+}
+
+#list-container ul li
+{
+
+	width: 100%;
 	display: inline-block;
 	margin: .2em 0 0 0;
 }
-#listcontainer li img 
+#list-container li img 
 {
 	width: 25%;
 	height: auto;

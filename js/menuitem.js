@@ -8,12 +8,16 @@
 
 function UserMenuItem()
 {
+	var item = {}
 	
-	this.itemTitle;
-	this.allergens;
-	this.price;
-	this.dishtype;
-	this.course;
+	item.itemTitle;
+	item.allergens;
+	item.price;
+	item.dishtype;
+	item.course;
+
+	// return item
+	
 // Set the dish title
 
 	this.setTitle = function(title)
